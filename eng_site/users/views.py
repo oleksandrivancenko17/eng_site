@@ -10,7 +10,7 @@ class UserLoginView(LoginView):
     redirect_authenticated_user = True
 
     def get_success_url(self):
-        return reverse_lazy('dashboard')
+        return reverse_lazy('core:dashboard')
 
 
 class UserLogoutView(LogoutView):
@@ -20,7 +20,7 @@ class UserLogoutView(LogoutView):
 class UserRegisterView(CreateView):
     form_class = CustomUserCreationForm
     template_name = 'register.html'
-    success_url = reverse_lazy('dashboard')
+    success_url = reverse_lazy('core:dashboard')
 
     def form_valid(self, form):
         response = super().form_valid(form)
