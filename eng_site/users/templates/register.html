@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}Реєстрація - EngLearn{% endblock %}
+
+{% block content %}
+    <div class="container d-flex align-items-center justify-content-center py-5" style="min-height: 100vh;">
+        <div class="card w-100 border-0 shadow-sm" style="max-width: 450px; border-radius: 1rem;">
+            <div class="card-body p-4 p-sm-5">
+                <h3 class="text-center mb-4 fw-bold text-primary">EngLearn</h3>
+                <h5 class="text-center mb-4">Створення акаунту</h5>
+
+                <form method="POST">
+                    {% csrf_token %}
+
+                    {% if form.non_field_errors %}
+                        <div class="alert alert-danger py-2">
+                            {% for error in form.non_field_errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+
+                    <div class="mb-3">
+                        <label for="id_username"
+                               class="form-label text-muted small fw-bold text-uppercase">Логін</label>
+                        <input type="text" name="username"
+                               class="form-control form-control-lg {% if form.username.errors %}is-invalid{% endif %}"
+                               id="id_username" placeholder="Вигадай собі нікнейм" required>
+                        {% for error in form.username.errors %}
+                            <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="id_email" class="form-label text-muted small fw-bold text-uppercase">Email</label>
+                        <input type="email" name="email"
+                               class="form-control form-control-lg {% if form.email.errors %}is-invalid{% endif %}"
+                               id="id_email" placeholder="name@example.com" required>
+                        {% for error in form.email.errors %}
+                            <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="id_password1"
+                               class="form-label text-muted small fw-bold text-uppercase">Пароль</label>
+                        <input type="password" name="password1"
+                               class="form-control form-control-lg {% if form.password1.errors %}is-invalid{% endif %}"
+                               id="id_password1" placeholder="Мінімум 8 символів" required>
+                        {% for error in form.password1.errors %}
+                            <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="id_password2" class="form-label text-muted small fw-bold text-uppercase">Підтвердження
+                            пароля</label>
+                        <input type="password" name="password2"
+                               class="form-control form-control-lg {% if form.password2.errors %}is-invalid{% endif %}"
+                               id="id_password2" placeholder="Повторіть пароль" required>
+                        {% for error in form.password2.errors %}
+                            <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="d-grid gap-2 mt-4">
+                        <button type="submit" class="btn btn-success btn-lg fw-bold">Створити акаунт</button>
+                    </div>
+                </form>
+
+                <div class="text-center mt-4">
+                    <small class="text-muted">Вже є акаунт? <a href="{% url 'users:login' %}"
+                                                               class="text-decoration-none fw-bold">Увійти</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
