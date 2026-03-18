@@ -31,7 +31,8 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Картки (SRS)</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Читання</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Словник</a></li>
+                    <li class="nav-item"><a class="nav-link {% if request.resolver_match.url_name == 'dictionary' %}active{% endif %}"
+                           href="{% url 'dictionary:dictionary' %}">Словник</a></li>
                 </ul>
 
                 {% if user.is_authenticated %}
