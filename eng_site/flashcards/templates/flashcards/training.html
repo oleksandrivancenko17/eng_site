@@ -1,0 +1,239 @@
+{% extends 'base.html' %}
+
+{% block title %}Тренування - EngLearn{% endblock %}
+
+{% block extra_css %}
+    <style>
+        .flashcard {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            background-color: white;
+            border: 2px solid #e9ecef;
+        }
+
+        .word-en {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #212529;
+            letter-spacing: -1px;
+        }
+
+        .word-uk {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #0d6efd;
+        }
+
+        .example-sentence {
+            font-size: 1.2rem;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.4s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .srs-btn {
+            padding: 12px 0;
+            font-weight: 600;
+            border-radius: 12px;
+        }
+
+        /* Додамо плавний перехід для лічильника */
+        #cards-left {
+            transition: all 0.3s;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container my-5">
+
+        {% if cards_list %}
+            <div class="text-center mb-4">
+                <h3 class="fw-bold mb-2">Тренування пам'яті</h3>
+                <p class="text-muted fs-5">
+                    Залишилось на сьогодні: <span class="badge bg-primary rounded-pill px-3 py-2 ms-1 fs-6"
+                                                  id="cards-left">{{ cards_left }}</span>
+                </p>
+            </div>
+
+            <div class="row justify-content-center" id="training-area">
+                <div class="col-md-8 col-lg-6">
+                    <div class="flashcard shadow-sm p-4 p-md-5 text-center position-relative">
+                        <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3"
+                                title="Прослухати" onclick="speakWord()">
+                            <i class="bi bi-volume-up-fill fs-5 text-secondary"></i>
+                        </button>
+
+                        <div id="card-front">
+                        <span class="text-uppercase tracking-wide text-muted small fw-bold mb-3 d-block"
+                              id="word-category">
+                            </span>
+                            <h1 class="word-en mb-0" id="english-word">
+                            </h1>
+                        </div>
+
+                        <div id="card-back" style="display: none;" class="mt-4 pt-4 border-top">
+                            <h2 class="word-uk mb-3" id="ukrainian-translation">
+                            </h2>
+                            <p class="example-sentence mb-0" id="example-sentence">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-lg w-100 py-3 fw-bold shadow-sm" id="show-answer-btn"
+                                onclick="showAnswer()">
+                            Показати переклад
+                        </button>
+
+                        <div id="srs-controls" style="display: none;">
+                            <p class="text-center text-muted small fw-bold text-uppercase mb-3">Як добре ти згадав?</p>
+                            <div class="row g-2">
+                                <div class="col-6 col-sm-3">
+                                    <button class="btn btn-outline-danger w-100 srs-btn" onclick="nextCard('again')">
+                                        <span class="d-block mb-1">Знову</span>
+                                    </button>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <button class="btn btn-outline-warning w-100 srs-btn text-dark"
+                                            onclick="nextCard('hard')">
+                                        <span class="d-block mb-1">Важко</span>
+                                    </button>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <button class="btn btn-outline-success w-100 srs-btn" onclick="nextCard('good')">
+                                        <span class="d-block mb-1">Добре</span>
+                                    </button>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <button class="btn btn-outline-primary w-100 srs-btn" onclick="nextCard('easy')">
+                                        <span class="d-block mb-1">Легко</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 text-center py-5">
+                    <div class="display-1 text-success mb-4"><i class="bi bi-check-circle-fill"></i></div>
+                    <h2 class="fw-bold">Чудова робота!</h2>
+                    <p class="text-muted fs-5">Ти повторив усі доступні слова. Повертайся пізніше!</p>
+                    <a href="{% url 'dictionary:dictionary' %}" class="btn btn-primary btn-lg mt-3 px-5">Додати нові слова</a>
+                </div>
+            </div>
+        {% endif %}
+
+        {{ cards_list|json_script:"cards-data" }}
+
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script>
+        const cards = JSON.parse(document.getElementById('cards-data').textContent);
+        let currentIndex = 0;
+        let totalCardsLeft = parseInt("{{ cards_left }}");
+
+        const btnShowAnswer = document.getElementById('show-answer-btn');
+        const cardBack = document.getElementById('card-back');
+        const srsControls = document.getElementById('srs-controls');
+
+        function loadCurrentCard() {
+            if (currentIndex >= cards.length) {
+                if (totalCardsLeft > 0) {
+                    location.reload();
+                } else {
+                    showSuccessScreen();
+                }
+                return;
+            }
+
+            const card = cards[currentIndex];
+
+            document.getElementById('word-category').innerText = card.category;
+            document.getElementById('english-word').innerText = card.english_word;
+            document.getElementById('ukrainian-translation').innerText = card.translation;
+            document.getElementById('example-sentence').innerText = card.example ? `"${card.example}"` : "";
+            document.getElementById('cards-left').innerText = totalCardsLeft;
+
+            // Скидаємо UI
+            cardBack.style.display = 'none';
+            cardBack.classList.remove('fade-in');
+            srsControls.style.display = 'none';
+            srsControls.classList.remove('fade-in');
+            btnShowAnswer.style.display = 'block';
+        }
+
+        function nextCard(quality) {
+            const currentCard = cards[currentIndex];
+            const url = `/flashcards/review/${currentCard.id}/`;
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'X-CSRFToken': '{{ csrf_token }}',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({'quality': quality})
+            });
+
+            currentIndex++;
+
+            if (quality !== 'again') {
+                totalCardsLeft--;
+            }
+
+            loadCurrentCard();
+        }
+
+        function showAnswer() {
+            btnShowAnswer.style.display = 'none';
+            cardBack.style.display = 'block';
+            cardBack.classList.add('fade-in');
+            srsControls.style.display = 'block';
+            srsControls.classList.add('fade-in');
+        }
+
+        function speakWord() {
+            const word = cards[currentIndex].english_word;
+            const msg = new SpeechSynthesisUtterance(word);
+            msg.lang = 'en-US';
+            window.speechSynthesis.speak(msg);
+        }
+
+        function showSuccessScreen() {
+            document.getElementById('training-area').innerHTML = `
+            <div class="col-md-8 col-lg-6 text-center py-5">
+                <div class="display-1 text-success mb-4"><i class="bi bi-check-circle-fill"></i></div>
+                <h2 class="fw-bold">Чудова робота!</h2>
+                <p class="text-muted fs-5">Ти повторив усі слова на сьогодні.</p>
+                <a href="{% url 'dictionary:dictionary' %}" class="btn btn-primary btn-lg mt-3 px-5">До словника</a>
+            </div>`;
+        }
+
+        if (cards.length > 0) {
+            loadCurrentCard();
+        }
+    </script>
+{% endblock %}

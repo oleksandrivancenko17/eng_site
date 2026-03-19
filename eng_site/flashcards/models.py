@@ -12,6 +12,7 @@ class UserWord(models.Model):
     learning_level = models.SmallIntegerField(default=0, verbose_name='Learning Level')
 
     next_review_date = models.DateTimeField(default=timezone.now, verbose_name='Next Review Date')
+    success_counter = models.SmallIntegerField(default=0, verbose_name='Success Counter')
 
     def __str__(self):
         return f'{self.user.username} | {self.word.english_word}  lvl-- {self.learning_level}'

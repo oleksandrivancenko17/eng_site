@@ -46,7 +46,7 @@
                 <div class="card stat-card stat-srs shadow-sm h-100 border-0">
                     <div class="card-body">
                         <h6 class="text-muted text-uppercase mb-2">Чекають на повторення</h6>
-                        <h2 class="display-6 fw-bold text-primary mb-0">42</h2>
+                        <h2 class="display-6 fw-bold text-primary mb-0">{{ cards_to_review_count|default:"0" }}</h2>
                         <small class="text-muted">карток на сьогодні</small>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                 <div class="card stat-card stat-words shadow-sm h-100 border-0">
                     <div class="card-body">
                         <h6 class="text-muted text-uppercase mb-2">Вивчено слів</h6>
-                        <h2 class="display-6 fw-bold text-success mb-0">128</h2>
+                        <h2 class="display-6 fw-bold text-success mb-0">{{ total_words_count|default:"0" }}</h2>
                         <small class="text-muted">всього у твоєму словнику</small>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                 <div class="card stat-card stat-streak shadow-sm h-100 border-0">
                     <div class="card-body">
                         <h6 class="text-muted text-uppercase mb-2">Ударний режим</h6>
-                        <h2 class="display-6 fw-bold text-warning mb-0">5 <span class="fs-4 text-dark">днів</span></h2>
+                        <h2 class="display-6 fw-bold text-warning mb-0">{{ streak_days|default:"0" }} <span class="fs-4 text-dark">днів</span></h2>
                         <small class="text-muted">навчаєшся без перерв</small>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                         <h5 class="card-title fw-bold">Повторити слова</h5>
                         <p class="card-text text-muted mb-4">Пройди сьогоднішню порцію карток за алгоритмом
                             інтервального повторення.</p>
-                        <button class="btn btn-primary w-100 mt-auto">Почати тренування</button>
+                        <button class="btn btn-primary w-100 mt-auto" href="{% url 'flashcards:training' %}">Почати тренування</button>
                     </div>
                 </div>
             </div>
