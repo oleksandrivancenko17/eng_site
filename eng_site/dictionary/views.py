@@ -2,6 +2,7 @@ from django.db.models import Q
 from django.shortcuts import render
 from django.views.generic import ListView
 from dictionary.models import Category, Word
+from flashcards.models import UserWord
 
 
 class DictionaryListView(ListView):
@@ -19,26 +20,38 @@ class DictionaryListView(ListView):
 
         category_query = self.request.GET.get('category')
 
+        learning_status = self.request.GET.get('status')
+
         if search_query:
             queryset = queryset.filter(
                 Q(english_word__icontains=search_query) |
                 Q(translation__icontains=search_query)
             )
 
-
         if level_query and level_query != 'all':
             queryset = queryset.filter(
                 Q(level__startswith=level_query)
             )
 
-
         if category_query and category_query != 'all':
-            queryset = queryset.filter(category_id = category_query)
+            queryset = queryset.filter(category_id=category_query)
 
+        if self.request.user.is_authenticated:
+            if learning_status and learning_status != 'all':
+                if learning_status == 'learning':
+                    queryset = queryset.filter(user_learning__user=self.request.user)
+                elif learning_status == 'not_learning':
+                    queryset = queryset.exclude(user_learning__user=self.request.user)
 
-        return queryset
+        return queryset.distinct()
 
     def get_context_data(self, **kwargs):
         context = super(DictionaryListView, self).get_context_data(**kwargs)
         context['categories'] = Category.objects.all()
+
+        if self.request.user.is_authenticated:
+            context['user_words'] = UserWord.objects.filter(user=self.request.user).values_list('word_id', flat=True)
+        else:
+            context['user_words'] = []
+
         return context

@@ -22,5 +22,5 @@ urlpatterns = [
     path('', include('users.urls', namespace='users')),
     path('', include('core.urls', namespace='core')),
     path('dictionary/', include('dictionary.urls', namespace='dictionary')),
-
+    path('flashcards/', include('flashcards.urls', namespace='flashcards')),
 ]

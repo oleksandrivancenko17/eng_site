@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'users',
     'core',
     'dictionary',
+    'flashcards',
+
 
 ]
 

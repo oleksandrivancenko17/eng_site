@@ -82,9 +82,9 @@
                     <div class="col-12 col-md-4 col-lg-3">
                         <label class="form-label small text-muted text-uppercase fw-bold mb-1">Твій прогрес</label>
                         <select class="form-select text-muted" name="status">
-                            <option value="all">Всі слова</option>
-                            <option value="not_learning" selected>Ще не вивчаю (Нові)</option>
-                            <option value="learning">Вже у моєму словнику</option>
+                            <option value="all"{% if request.GET.status == "all" or not request.GET.status %} selected {% endif %}>Всі слова</option>
+                            <option value="not_learning" {% if request.GET.status == "not_learning" %} selected {% endif %}>Ще не вивчаю (Нові)</option>
+                            <option value="learning"{% if request.GET.status == "learning" %} selected {% endif %}>Вже у моєму словнику</option>
                         </select>
                     </div>
 
@@ -128,10 +128,16 @@
                                 <span class="badge bg-primary text-white">{{ word.level }}</span>
                             </td>
                             <td class="pe-4 py-3 text-end">
-                                <button class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-bold add-btn"
-                                        onclick="addToMyWords(this, {{ word.id }})">
-                                    <i class="bi bi-plus-lg me-1"></i> Вивчати
-                                </button>
+                                {% if word.id in user_words %}
+                                    <span class="badge bg-success bg-opacity-10 text-success border border-success px-3 py-2 rounded-pill fade-in">
+                                          <i class="bi bi-check-circle me-1"></i> Вже вчу
+                                     </span>
+                                {% else %}
+                                    <button class="btn btn-sm btn-primary rounded-pill px-3 shadow-sm"
+                                            onclick="addToMyWords(this, {{ word.id }})">
+                                        <i class="bi bi-plus-circle me-1"></i> Вивчати
+                                    </button>
+                                {% endif %}
                             </td>
                         </tr>
                     {% empty %}
@@ -177,13 +183,42 @@
 {% block extra_js %}
     <script>
         function addToMyWords(button, wordId) {
-            console.log(`Відправляємо запит на додавання слова з ID: ${wordId}`);
-            const parentTd = button.parentElement;
-            parentTd.innerHTML = `
-            <span class="badge bg-success bg-opacity-10 text-success border border-success px-3 py-2 rounded-pill fade-in">
-                <i class="bi bi-check-circle me-1"></i> Додано
-            </span>
-        `;
+            console.log("1. Клік працює! ID слова:", wordId);
+
+            const url = `/flashcards/add/${wordId}/`;
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'X-CSRFToken': '{{ csrf_token }}',
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => {
+                    console.log("2. Сервер відповів зі статусом:", response.status);
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("3. Дані від сервера:", data); // Дивимось, що прийшло!
+
+                    if (data.status === 'success' || data.status === 'info') {
+                        const badgeText = data.status === 'success' ? 'Додано' : 'Вже вчу';
+
+                        // Міняємо саму кнопку на бейдж
+                        button.outerHTML = `
+                    <span class="badge bg-success bg-opacity-10 text-success border border-success px-3 py-2 rounded-pill fade-in">
+                        <i class="bi bi-check-circle me-1"></i> ${badgeText}
+                    </span>
+                `;
+                        console.log("4. Кнопку успішно замінено!");
+                    } else {
+                        console.warn("Щось пішло не так:", data);
+                        alert("Помилка: " + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('5. Критична помилка fetch:', error);
+                });
         }
     </script>
 {% endblock %}
