@@ -21,6 +21,6 @@ class DashboardView(LoginRequiredMixin, TemplateView):
             user=self.request.user
         ).count()
 
-        context['streak_days'] = 0
+        context['streak_days'] = self.request.user.current_streak
 
         return context

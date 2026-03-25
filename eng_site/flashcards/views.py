@@ -2,7 +2,6 @@ import json
 from datetime import timedelta
 
 from django.contrib.auth.decorators import login_required
-from django.contrib.messages import success
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, render
 from django.utils import timezone
@@ -98,5 +97,18 @@ def review_card(request, card_id):
     card.learning_level = learning_level
 
     card.save(update_fields=['next_review_date', 'learning_level', 'success_counter'])
+
+    user = request.user
+    today = now.date()
+    last_activity = user.last_activity_date
+
+    if last_activity != today:
+        if last_activity == today - timedelta(days=1):
+            user.current_streak += 1
+        else:
+            user.current_streak = 1
+
+        user.last_activity_date = today
+        user.save(update_fields=['current_streak', 'last_activity_date'])
 
     return JsonResponse({'status': 'success'})

@@ -2,8 +2,10 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 class CustomUser(AbstractUser):
-    avatar = models.ImageField(upload_to = 'avatars/', default='avatars/default.jpg')
-    english_level = models.CharField(max_length = 2,default='A1')
+    current_streak = models.IntegerField(default=0, verbose_name="Поточний стрік")
+    last_activity_date = models.DateField(null=True, blank=True, verbose_name="Остання активність")
+
+
 
     def __str__(self):
         return self.username
