@@ -29,11 +29,15 @@
                         <a class="nav-link {% if request.resolver_match.url_name == 'dashboard' %}active{% endif %}"
                            href="{% url 'core:dashboard' %}">Дашборд</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link {% if request.resolver_match.url_name == 'training' %}active{% endif %}"
-                           href="{% url 'flashcards:training' %}">Картки (SRS)</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Читання</a></li>
-                    <li class="nav-item"><a class="nav-link {% if request.resolver_match.url_name == 'dictionary' %}active{% endif %}"
-                           href="{% url 'dictionary:dictionary' %}">Словник</a></li>
+                    <li class="nav-item"><a
+                            class="nav-link {% if request.resolver_match.url_name == 'training' %}active{% endif %}"
+                            href="{% url 'flashcards:training' %}">Картки (SRS)</a></li>
+                    <li class="nav-item"><a
+                            class="nav-link {% if request.resolver_match.url_name == 'list' %}active{% endif %}"
+                            href="{% url 'library:list' %}">Читання</a></li>
+                    <li class="nav-item"><a
+                            class="nav-link {% if request.resolver_match.url_name == 'dictionary' %}active{% endif %}"
+                            href="{% url 'dictionary:dictionary' %}">Словник</a></li>
                 </ul>
 
                 {% if user.is_authenticated %}
@@ -57,11 +61,11 @@
 {% endblock %}
 
 
-    {% block content %}
-    {% endblock %}
+{% block content %}
+{% endblock %}
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-    {% block extra_js %}{% endblock %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'js/main.js' %}"></script>
+{% block extra_js %}{% endblock %}
 </body>
 </html>

@@ -1,0 +1,72 @@
+[
+  {
+    "title": "My Morning Routine",
+    "description": "Простий текст про щоденні ранкові звички.",
+    "content": "I wake up at 7 AM every day. First, I wash my face and brush my teeth. Then, I go to the kitchen to make breakfast. I usually eat eggs, toast, and drink a cup of coffee. After breakfast, I get dressed and pack my bag. Finally, I leave the house and go to work. I like my mornings because they are quiet and peaceful.",
+    "level": "A1",
+    "category": "Повсякденне життя"
+  },
+  {
+    "title": "A Trip to the Zoo",
+    "description": "Розповідь про веселий похід до зоопарку на вихідних.",
+    "content": "Yesterday, I went to the zoo with my family. The weather was sunny and warm. We saw many interesting animals. I liked the monkeys the most because they were very funny and playful. My sister liked the tall giraffes. We ate ice cream and took a lot of photos. It was a great day, and we went home happy but tired.",
+    "level": "A1",
+    "category": "Подорожі"
+  },
+  {
+    "title": "Smartphones in Our Lives",
+    "description": "Як смартфони змінили наше спілкування та повсякденні справи.",
+    "content": "Today, almost everyone has a smartphone in their pocket. We use them for many things: to call friends, send text messages, and surf the internet. Smartphones help us find information quickly when we need it. We can also take high-quality photos, listen to music, and play games. However, looking at the screen for too long can be bad for our eyes, so we need to take breaks.",
+    "level": "A2",
+    "category": "Технології"
+  },
+  {
+    "title": "My Favorite Hobby",
+    "description": "Текст про захоплення фотографією та прогулянки містом.",
+    "content": "My favorite hobby is photography. I got my first camera two years ago as a birthday present. On weekends, I usually go to the local park or walk around the city center to take pictures. I love capturing beautiful moments of nature and interesting people. Sometimes, I edit the photos on my laptop to make them look better. Later, I share my best works with my friends online.",
+    "level": "A2",
+    "category": "Повсякденне життя"
+  },
+  {
+    "title": "Exploring a New City",
+    "description": "Корисні поради для туристів, які приїхали в нове місце.",
+    "content": "Visiting a new city is always an exciting experience. First, you should get a paper map or download a navigation app on your phone. Walking around the city center is a great way to see famous buildings, monuments, and squares. Don't forget to try the local food in small, traditional cafes rather than big tourist restaurants. Also, talking to local people can help you find hidden gems that tourists usually miss.",
+    "level": "B1",
+    "category": "Подорожі"
+  },
+  {
+    "title": "The Future of Remote Work",
+    "description": "Роздуми про віддалену роботу, її переваги та недоліки.",
+    "content": "Remote work has become incredibly popular in recent years, changing the traditional office culture. Many companies now allow their employees to work from home full-time or part-time. This trend saves a lot of time because people don't have to commute to the office every single day. It also gives workers more flexibility to manage their personal lives and families. However, some people argue that they miss the spontaneous social interaction and brainstorming sessions with their colleagues.",
+    "level": "B1",
+    "category": "Технології"
+  },
+  {
+    "title": "The Mystery of Sleep",
+    "description": "Науковий погляд на те, чому сон критично важливий для здоров'я.",
+    "content": "Sleep is a fundamental human need, yet scientists are still uncovering many of its profound mysteries. While our bodies rest, our brains are highly active: processing information, consolidating daily memories, and clearing out harmful cellular toxins. A chronic lack of sleep can lead to serious health issues, including memory impairment, weight gain, and a significantly weakened immune system. Establishing a consistent sleep schedule and avoiding blue light from screens before bedtime are crucial steps for maintaining good sleep hygiene.",
+    "level": "B2",
+    "category": "Наука"
+  },
+  {
+    "title": "The Industrial Revolution",
+    "description": "Історичний вплив промислової революції на розвиток людства.",
+    "content": "The Industrial Revolution, which began in Britain in the late 18th century, profoundly and irreversibly changed the world. It marked the massive transition from manual hand production methods to machines, leading to the rapid rise of factories and mass production. Urbanization accelerated globally as millions of people moved from rural farming areas to expanding cities in search of industrial work. While this era brought significant economic growth and unprecedented technological advancement, it also resulted in extremely poor working conditions and severe environmental pollution in its early stages.",
+    "level": "B2",
+    "category": "Історія"
+  },
+  {
+    "title": "Artificial Intelligence in Healthcare",
+    "description": "Аналіз використання нейромереж для діагностики захворювань.",
+    "content": "Artificial Intelligence is currently revolutionizing the global healthcare sector by providing highly advanced diagnostic tools and personalized treatment plans. Complex machine learning algorithms can analyze vast amounts of medical data in seconds, identifying subtle patterns that may easily elude even experienced human doctors. For instance, AI systems are now demonstrably capable of detecting early microscopic signs of diseases, such as specific cancers, from radiological images with remarkable precision. Despite these breathtaking advancements, ethical concerns regarding patient data privacy and the ultimate legal accountability of AI-driven medical decisions remain significant hurdles that society must address.",
+    "level": "C1",
+    "category": "Технології"
+  },
+  {
+    "title": "Quantum Computing Advancements",
+    "description": "Складна наукова стаття про принципи квантових обчислень.",
+    "content": "Quantum computing represents a monumental paradigm shift in processing capabilities, directly leveraging the counterintuitive principles of quantum mechanics, notably superposition and entanglement. Unlike classical computing bits, which are strictly confined to a binary state of 0 or 1, quantum bits (qubits) possess the extraordinary ability to exist in multiple states simultaneously. This inherent multi-state existence allows quantum computers to perform extraordinarily complex algorithms at speeds that are orders of magnitude faster than current supercomputers. Such technology holds the disruptive potential to instantaneously break contemporary cryptographic protocols and drastically accelerate pharmaceutical drug discovery. Nevertheless, maintaining delicate qubit stability and mitigating the effects of quantum decoherence present formidable engineering bottlenecks that the international scientific community is rigorously striving to overcome.",
+    "level": "C2",
+    "category": "Наука"
+  }
+]
