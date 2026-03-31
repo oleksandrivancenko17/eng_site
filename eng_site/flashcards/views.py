@@ -112,3 +112,39 @@ def review_card(request, card_id):
         user.save(update_fields=['current_streak', 'last_activity_date'])
 
     return JsonResponse({'status': 'success'})
+
+@require_POST
+def add_custom_word_ajax(request):
+    try:
+        data = json.loads(request.body)
+        word = data.get('word','').strip()
+        translation = data.get('translation','').strip()
+        example = data.get('example_usage','').strip()
+        level = data.get('level','A1')
+        category_id = data.get('category_id')
+
+        if not category_id:
+            category_id = None
+
+        if not word or not translation:
+            return JsonResponse({'status': 'error', 'message': 'Недостатньо даних'}, status=400)
+
+        word_obj, word_created = Word.objects.get_or_create(
+            english_word = word.capitalize(),
+            defaults={
+                'translation': translation,
+                'example': example,
+                'level': level,
+                'category_id': category_id,
+            }
+        )
+
+
+        user_word, uw_created = UserWord.objects.get_or_create(
+            user=request.user,
+            word=word_obj,
+        )
+
+        return JsonResponse({'status': 'success', 'created': word_created})
+    except Exception as e:
+        return JsonResponse({'status': 'error', 'message': str(e)}, status=500)

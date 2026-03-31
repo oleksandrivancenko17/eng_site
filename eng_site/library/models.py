@@ -46,3 +46,5 @@ class Article(models.Model):
         verbose_name = "Article"
         verbose_name_plural = "Articles"
         ordering = ('title',)
+
+
