@@ -1,0 +1,133 @@
+[
+  {
+    "model": "grammar.grammartopic", "pk": 1,
+    "fields": {
+      "title": "Present Simple", "level": "A1",
+      "theory": "Використовується для регулярних дій, звичок та загальновідомих фактів. Зі займенниками he, she, it до дієслова додається закінчення -s/-es."
+    }
+  },
+  {
+    "model": "grammar.grammartopic", "pk": 2,
+    "fields": {
+      "title": "Past Simple", "level": "A1",
+      "theory": "Використовується для дій, які завершилися в минулому. Для правильних дієслів додаємо -ed, для неправильних використовуємо другу форму (V2)."
+    }
+  },
+  {
+    "model": "grammar.grammartopic", "pk": 3,
+    "fields": {
+      "title": "Present Continuous", "level": "A2",
+      "theory": "Використовується для дій, які відбуваються прямо зараз. Утворюється за допомогою дієслова to be (am/is/are) та дієслова із закінченням -ing."
+    }
+  },
+  {
+    "model": "grammar.grammartopic", "pk": 4,
+    "fields": {
+      "title": "Present Perfect", "level": "B1",
+      "theory": "Використовується для дій, які відбулися в минулому, але їхній результат важливий зараз. Утворюється: have/has + третя форма дієслова (V3/-ed)."
+    }
+  },
+
+  {"model": "grammar.question", "pk": 1, "fields": {"topic": 1, "question": "She ___ to the gym every morning.", "explanation": "З he/she/it у Present Simple до дієслова додається закінчення -es."}},
+  {"model": "grammar.answer", "pk": 1, "fields": {"question": 1, "answer": "goes", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 2, "fields": {"question": 1, "answer": "go", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 3, "fields": {"question": 1, "answer": "going", "is_correct": false}},
+
+  {"model": "grammar.question", "pk": 2, "fields": {"topic": 1, "question": "They ___ play tennis on Sundays.", "explanation": "Для утворення заперечення з I/you/we/they використовується допоміжне дієслово don't."}},
+  {"model": "grammar.answer", "pk": 4, "fields": {"question": 2, "answer": "doesn't", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 5, "fields": {"question": 2, "answer": "don't", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 6, "fields": {"question": 2, "answer": "aren't", "is_correct": false}},
+
+  {"model": "grammar.question", "pk": 3, "fields": {"topic": 1, "question": "___ you like coffee?", "explanation": "Питання з I/you/we/they у Present Simple починаються з Do."}},
+  {"model": "grammar.answer", "pk": 7, "fields": {"question": 3, "answer": "Does", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 8, "fields": {"question": 3, "answer": "Are", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 9, "fields": {"question": 3, "answer": "Do", "is_correct": true}},
+
+  {"model": "grammar.question", "pk": 4, "fields": {"topic": 1, "question": "Water ___ at 100 degrees Celsius.", "explanation": "Це загальновідомий факт (закони природи), тому використовуємо Present Simple. Water — це it, тому додаємо -s."}},
+  {"model": "grammar.answer", "pk": 10, "fields": {"question": 4, "answer": "boil", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 11, "fields": {"question": 4, "answer": "boils", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 12, "fields": {"question": 4, "answer": "is boiling", "is_correct": false}},
+
+  {"model": "grammar.question", "pk": 5, "fields": {"topic": 1, "question": "My brother ___ in London.", "explanation": "Брат (he), тому дієслово отримує закінчення -s."}},
+  {"model": "grammar.answer", "pk": 13, "fields": {"question": 5, "answer": "live", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 14, "fields": {"question": 5, "answer": "lives", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 15, "fields": {"question": 5, "answer": "living", "is_correct": false}},
+
+
+  {"model": "grammar.question", "pk": 6, "fields": {"topic": 2, "question": "I ___ a great movie yesterday.", "explanation": "Маркер yesterday (вчора) вказує на Past Simple. Дієслово see — неправильне, його друга форма — saw."}},
+  {"model": "grammar.answer", "pk": 16, "fields": {"question": 6, "answer": "see", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 17, "fields": {"question": 6, "answer": "saw", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 18, "fields": {"question": 6, "answer": "seen", "is_correct": false}},
+
+  {"model": "grammar.question", "pk": 7, "fields": {"topic": 2, "question": "Where ___ you go last night?", "explanation": "У питаннях Past Simple використовується допоміжне дієслово did, а основне дієслово повертається в початкову форму."}},
+  {"model": "grammar.answer", "pk": 19, "fields": {"question": 7, "answer": "do", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 20, "fields": {"question": 7, "answer": "were", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 21, "fields": {"question": 7, "answer": "did", "is_correct": true}},
+
+  {"model": "grammar.question", "pk": 8, "fields": {"topic": 2, "question": "She ___ finish her homework.", "explanation": "Заперечення у минулому часі утворюється за допомогою didn't."}},
+  {"model": "grammar.answer", "pk": 22, "fields": {"question": 8, "answer": "don't", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 23, "fields": {"question": 8, "answer": "didn't", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 24, "fields": {"question": 8, "answer": "wasn't", "is_correct": false}},
+
+  {"model": "grammar.question", "pk": 9, "fields": {"topic": 2, "question": "We ___ at home all day.", "explanation": "Для займенника we дієслово to be в минулому часі має форму were."}},
+  {"model": "grammar.answer", "pk": 25, "fields": {"question": 9, "answer": "was", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 26, "fields": {"question": 9, "answer": "were", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 27, "fields": {"question": 9, "answer": "are", "is_correct": false}},
+
+  {"model": "grammar.question", "pk": 10, "fields": {"topic": 2, "question": "___ they buy a new car?", "explanation": "Питання в Past Simple завжди починається з Did."}},
+  {"model": "grammar.answer", "pk": 28, "fields": {"question": 10, "answer": "Were", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 29, "fields": {"question": 10, "answer": "Had", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 30, "fields": {"question": 10, "answer": "Did", "is_correct": true}},
+
+
+  {"model": "grammar.question", "pk": 11, "fields": {"topic": 3, "question": "Look! It ___.", "explanation": "Слово Look! (Подивись!) вказує на те, що дія відбувається прямо зараз."}},
+  {"model": "grammar.answer", "pk": 31, "fields": {"question": 11, "answer": "rains", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 32, "fields": {"question": 11, "answer": "is raining", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 33, "fields": {"question": 11, "answer": "rain", "is_correct": false}},
+
+  {"model": "grammar.question", "pk": 12, "fields": {"topic": 3, "question": "What ___ you doing right now?", "explanation": "Для займенника you допоміжне дієслово — are."}},
+  {"model": "grammar.answer", "pk": 34, "fields": {"question": 12, "answer": "is", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 35, "fields": {"question": 12, "answer": "do", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 36, "fields": {"question": 12, "answer": "are", "is_correct": true}},
+
+  {"model": "grammar.question", "pk": 13, "fields": {"topic": 3, "question": "I ___ to music at the moment.", "explanation": "З займенником I використовується форма am."}},
+  {"model": "grammar.answer", "pk": 37, "fields": {"question": 13, "answer": "am listening", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 38, "fields": {"question": 13, "answer": "listening", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 39, "fields": {"question": 13, "answer": "listen", "is_correct": false}},
+
+  {"model": "grammar.question", "pk": 14, "fields": {"topic": 3, "question": "She is ___ a book.", "explanation": "У Present Continuous до основного дієслова додається закінчення -ing."}},
+  {"model": "grammar.answer", "pk": 40, "fields": {"question": 14, "answer": "read", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 41, "fields": {"question": 14, "answer": "reading", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 42, "fields": {"question": 14, "answer": "reads", "is_correct": false}},
+
+  {"model": "grammar.question", "pk": 15, "fields": {"topic": 3, "question": "They ___ watching TV.", "explanation": "Заперечення з they утворюється як are not (aren't)."}},
+  {"model": "grammar.answer", "pk": 43, "fields": {"question": 15, "answer": "don't", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 44, "fields": {"question": 15, "answer": "isn't", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 45, "fields": {"question": 15, "answer": "aren't", "is_correct": true}},
+
+
+  {"model": "grammar.question", "pk": 16, "fields": {"topic": 4, "question": "I ___ visited Paris three times.", "explanation": "Present Perfect утворюється за допомогою have для I/you/we/they."}},
+  {"model": "grammar.answer", "pk": 46, "fields": {"question": 16, "answer": "has", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 47, "fields": {"question": 16, "answer": "have", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 48, "fields": {"question": 16, "answer": "did", "is_correct": false}},
+
+  {"model": "grammar.question", "pk": 17, "fields": {"topic": 4, "question": "She ___ already finished her lunch.", "explanation": "Для he/she/it використовується допоміжне дієслово has."}},
+  {"model": "grammar.answer", "pk": 49, "fields": {"question": 17, "answer": "has", "is_correct": true}},
+  {"model": "grammar.answer", "pk": 50, "fields": {"question": 17, "answer": "have", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 51, "fields": {"question": 17, "answer": "is", "is_correct": false}},
+
+  {"model": "grammar.question", "pk": 18, "fields": {"topic": 4, "question": "___ you ever eaten sushi?", "explanation": "У питаннях Present Perfect допоміжне дієслово Have/Has виноситься наперед."}},
+  {"model": "grammar.answer", "pk": 52, "fields": {"question": 18, "answer": "Did", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 53, "fields": {"question": 18, "answer": "Has", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 54, "fields": {"question": 18, "answer": "Have", "is_correct": true}},
+
+  {"model": "grammar.question", "pk": 19, "fields": {"topic": 4, "question": "We haven't seen him ___ 2015.", "explanation": "Since використовується, коли ми вказуємо точну точку початку дії в минулому (з 2015 року)."}},
+  {"model": "grammar.answer", "pk": 55, "fields": {"question": 19, "answer": "for", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 56, "fields": {"question": 19, "answer": "from", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 57, "fields": {"question": 19, "answer": "since", "is_correct": true}},
+
+  {"model": "grammar.question", "pk": 20, "fields": {"topic": 4, "question": "He has lived here ___ five years.", "explanation": "For використовується для позначення тривалості періоду (протягом 5 років)."}},
+  {"model": "grammar.answer", "pk": 58, "fields": {"question": 20, "answer": "since", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 59, "fields": {"question": 20, "answer": "in", "is_correct": false}},
+  {"model": "grammar.answer", "pk": 60, "fields": {"question": 20, "answer": "for", "is_correct": true}}
+]

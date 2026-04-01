@@ -38,6 +38,9 @@
                     <li class="nav-item"><a
                             class="nav-link {% if request.resolver_match.url_name == 'dictionary' %}active{% endif %}"
                             href="{% url 'dictionary:dictionary' %}">Словник</a></li>
+                    <li class="nav-item"><a
+                            class="nav-link {% if request.resolver_match.app_name == 'grammar' %}active{% endif %}"
+                            href="{% url 'grammar:topic_list' %}">Граматика</a></li>
                 </ul>
 
                 {% if user.is_authenticated %}

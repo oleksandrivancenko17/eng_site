@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Тест з граматики - EngLearn{% endblock %}
+
+{% block extra_css %}
+<style>
+    body { background-color: #f8f9fa; }
+    .quiz-container { max-width: 700px; margin: 0 auto; }
+    .option-btn {
+        text-align: left;
+        padding: 15px 20px;
+        font-size: 1.1rem;
+        transition: all 0.2s;
+        border: 2px solid #dee2e6;
+        background-color: white;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .option-btn:hover:not(:disabled) { border-color: #0d6efd; background-color: #f1f5f9; }
+
+    .option-btn.correct { border-color: #198754 !important; background-color: #d1e7dd !important; color: #0f5132 !important; }
+    .option-btn.incorrect { border-color: #dc3545 !important; background-color: #f8d7da !important; color: #842029 !important; }
+
+    .explanation-box { display: none; background-color: #e2e3e5; border-left: 5px solid #6c757d; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container my-4 quiz-container">
+
+    <div class="mb-4">
+        <a href="{% url 'grammar:topic_list' %}" class="text-decoration-none text-muted">
+            <i class="bi bi-arrow-left me-1"></i> Назад до всіх тем
+        </a>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-end mb-2">
+        <div>
+            <span class="badge bg-primary mb-2">{{ topic.level }}</span>
+            <h3 class="fw-bold m-0">{{ topic.title }}</h3>
+        </div>
+        <div class="text-end">
+            <span class="text-muted fw-bold" id="progress-text">Завантаження...</span>
+        </div>
+    </div>
+
+    <div class="progress mb-5" style="height: 10px;">
+        <div class="progress-bar bg-primary" id="progress-bar" role="progressbar" style="width: 0%;"></div>
+    </div>
+
+    <div class="card shadow-sm border-0 rounded-4" id="quiz-card">
+        <div class="card-body p-4 p-md-5">
+
+            <h4 class="mb-4" style="line-height: 1.6;" id="question-text"></h4>
+
+            <div id="options-container"></div>
+
+            <div class="explanation-box p-4 mt-4 rounded" id="explanation-box">
+                <h6 class="fw-bold mb-2"><i class="bi bi-info-circle me-2"></i>Пояснення:</h6>
+                <p class="mb-0 text-dark" id="explanation-text"></p>
+            </div>
+
+            <div class="text-end mt-4">
+                <button type="button" class="btn btn-primary btn-lg px-5" id="next-btn" style="display: none;">
+                    Наступне <i class="bi bi-arrow-right ms-2"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0 rounded-4 text-center py-5" id="result-card" style="display: none;">
+        <div class="card-body">
+            <i class="bi bi-trophy text-warning" style="font-size: 4rem;"></i>
+            <h2 class="fw-bold mt-3 mb-2">Тест завершено!</h2>
+            <h4 class="text-muted mb-4">Твій результат: <span class="text-primary fw-bold" id="final-score">0</span> з <span id="total-score">0</span></h4>
+            <a href="{% url 'grammar:topic_list' %}" class="btn btn-primary btn-lg px-5 fw-bold">
+                Повернутися до тем
+            </a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block extra_js %}
+{{ quiz_data_json|safe|json_script:"quiz-data" }}
+
+<script>
+    let quizData = [];
+    let totalQuestions = 0;
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    try {
+        const rawData = document.getElementById('quiz-data').textContent;
+        quizData = JSON.parse(JSON.parse(rawData));
+        totalQuestions = quizData.length;
+        document.getElementById('total-score').innerText = totalQuestions;
+    } catch (e) {
+        console.error("Помилка JSON:", e);
+    }
+
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+
+    function loadQuestion() {
+        if (!quizData || quizData.length === 0) return;
+
+        const q = quizData[currentQuestionIndex];
+        document.getElementById('question-text').innerHTML = q.text.replace('___', '<span class="text-primary fw-bold">________</span>');
+
+        const optionsContainer = document.getElementById('options-container');
+        optionsContainer.innerHTML = '';
+
+        q.answers.forEach((answer, index) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'option-btn';
+            btn.innerHTML = answer.text;
+
+            btn.onclick = function() {
+                const allButtons = optionsContainer.querySelectorAll('.option-btn');
+                allButtons.forEach(b => {
+                    b.disabled = true;
+                    b.style.pointerEvents = 'none';
+                });
+
+                if (answer.is_correct) {
+                    score++;
+                    btn.classList.add('correct');
+                } else {
+                    btn.classList.add('incorrect');
+                    allButtons.forEach((b, i) => {
+                        if (q.answers[i].is_correct) {
+                            b.classList.add('correct');
+                        }
+                    });
+                }
+
+                const expBox = document.getElementById('explanation-box');
+                document.getElementById('explanation-text').innerHTML = q.explanation || "Пояснення відсутнє.";
+                expBox.style.display = 'block';
+                expBox.style.borderLeftColor = answer.is_correct ? '#198754' : '#dc3545';
+
+                const nextBtn = document.getElementById('next-btn');
+                nextBtn.style.display = 'inline-block';
+            };
+
+            optionsContainer.appendChild(btn);
+        });
+
+        document.getElementById('explanation-box').style.display = 'none';
+        document.getElementById('next-btn').style.display = 'none';
+
+        document.getElementById('progress-text').innerText = `Питання ${currentQuestionIndex + 1} з ${totalQuestions}`;
+        const progressPercent = (currentQuestionIndex / totalQuestions) * 100;
+        document.getElementById('progress-bar').style.width = `${progressPercent}%`;
+
+        if (currentQuestionIndex === totalQuestions - 1) {
+            const nextBtn = document.getElementById('next-btn');
+            nextBtn.innerHTML = 'Завершити <i class="bi bi-check2-circle ms-2"></i>';
+            nextBtn.classList.replace('btn-primary', 'btn-success');
+        }
+    }
+
+    document.getElementById('next-btn').addEventListener('click', function() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < totalQuestions) {
+            loadQuestion();
+        } else {
+            finishQuiz();
+        }
+    });
+
+    function finishQuiz() {
+        document.getElementById('progress-bar').style.width = '100%';
+        document.getElementById('quiz-card').style.display = 'none';
+
+        document.getElementById('final-score').innerText = score;
+        document.getElementById('result-card').style.display = 'block';
+
+        fetch(`{% url 'grammar:save_progress' topic.id %}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCookie('csrftoken')
+            },
+            body: JSON.stringify({ 'score': score })
+        })
+        .then(res => res.json())
+        .then(data => console.log("Збережено:", data))
+        .catch(err => console.error(err));
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        loadQuestion();
+    });
+</script>
+{% endblock %}

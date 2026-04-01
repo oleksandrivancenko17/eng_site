@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Граматика - EngLearn{% endblock %}
+
+{% block extra_css %}
+<style>
+    .topic-card { transition: all 0.3s ease; border: none; border-radius: 12px; }
+    .topic-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important; }
+    .icon-wrapper { width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; border-radius: 12px; font-size: 1.5rem; }
+    
+    .bg-tenses { background-color: #e0f2fe; color: #0284c7; }
+    .bg-articles { background-color: #fef08a; color: #ca8a04; }
+    .bg-modals { background-color: #fce7f3; color: #db2777; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container mb-5 mt-4">
+
+    <div class="row mb-4 align-items-center">
+        <div class="col-md-8">
+            <h2 class="fw-bold mb-2">Тести з граматики</h2>
+            <p class="text-muted">Обери тему, щоб перевірити свої знання та закріпити правила на практиці.</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <select id="level-filter" class="form-select w-auto d-inline-block shadow-sm">
+                <option value="all" selected>Всі рівні</option>
+                <option value="A">Початковий (A1-A2)</option>
+                <option value="B">Середній (B1-B2)</option>
+                <option value="C">Просунутий (C1-C2)</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row g-4" id="topics-container">
+        {% for topic in topics %}
+            <div class="col-md-6 col-lg-4 topic-item" data-level="{{ topic.level }}">
+
+                <div class="card topic-card shadow-sm h-100
+                    {% if topic.score is not None %}
+                        {% if topic.percentage >= 80 %} border border-success border-opacity-50
+                        {% else %} border border-warning border-opacity-50 {% endif %}
+                    {% endif %}">
+
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="icon-wrapper {% cycle 'bg-tenses' 'bg-articles' 'bg-modals' %}">
+                                <i class="bi {% cycle 'bi-hourglass-split' 'bi-fonts' 'bi-chat-quote' %}"></i>
+                            </div>
+                            <span class="badge
+                                {% if topic.level == 'A1' or topic.level == 'A2' %}bg-success
+                                {% elif topic.level == 'B1' or topic.level == 'B2' %}bg-primary
+                                {% else %}bg-danger{% endif %}">{{ topic.level }}</span>
+                        </div>
+
+                        <h5 class="card-title fw-bold">{{ topic.title }}</h5>
+                        <p class="card-text text-muted small mb-4">{{ topic.theory|truncatechars:80 }}</p>
+
+                        {% if topic.score is not None %}
+                            <div class="mb-3 mt-auto">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    {% if topic.percentage >= 80 %}
+                                        <span class="text-success fw-bold"><i class="bi bi-check-circle-fill me-1"></i>Пройдено</span>
+                                    {% else %}
+                                        <span class="text-warning text-dark fw-bold"><i class="bi bi-exclamation-circle-fill me-1"></i>Потребує повторення</span>
+                                    {% endif %}
+                                    <span class="fw-bold">{{ topic.score }}/{{ topic.total_q }}</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar {% if topic.percentage >= 80 %}bg-success{% else %}bg-warning{% endif %}"
+                                         role="progressbar" style="width: {{ topic.percentage }}%;"></div>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="mt-auto"></div>
+                        {% endif %}
+
+                        <div class="d-flex justify-content-between align-items-center {% if topic.score is None %}mt-auto{% else %}mt-3{% endif %}">
+                            <span class="text-muted small"><i class="bi bi-list-ol me-1"></i> {{ topic.total_q }} питань</span>
+
+                            <a href="{% url 'grammar:take_test' topic.id %}" class="btn btn-sm px-3
+                                {% if topic.score is None %}btn-primary
+                                {% elif topic.percentage >= 80 %}btn-outline-secondary
+                                {% else %}btn-warning{% endif %}">
+
+                                {% if topic.score is None %}Почати тест
+                                {% elif topic.percentage >= 80 %}Пройти знову
+                                {% else %}Покращити результат{% endif %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="col-12 text-center mt-5">
+                <h4 class="text-muted">Теми ще не додані.</h4>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const filterSelect = document.getElementById('level-filter');
+        const topicCards = document.querySelectorAll('.topic-item');
+
+        filterSelect.addEventListener('change', function() {
+            const selectedLevel = this.value;
+
+            topicCards.forEach(card => {
+                const cardLevel = card.getAttribute('data-level');
+
+                if (selectedLevel === 'all' || cardLevel.startsWith(selectedLevel)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

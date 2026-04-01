@@ -24,4 +24,5 @@ urlpatterns = [
     path('dictionary/', include('dictionary.urls', namespace='dictionary')),
     path('flashcards/', include('flashcards.urls', namespace='flashcards')),
     path('library/', include('library.urls', namespace='library')),
+    path('grammar/', include('grammar.urls', namespace='grammar')),
 ]

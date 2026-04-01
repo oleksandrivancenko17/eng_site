@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'dictionary',
     'flashcards',
     'library',
+    'grammar',
 
 
 ]
