@@ -1,77 +1,161 @@
 /* =========================================
-   БАЗОВІ СТИЛІ
-========================================= */
+   Базові стилі та загальні класи
+   ========================================= */
 body {
     background-color: #f8f9fa;
 }
 
 /* =========================================
-   ВХІД ТА РЕЄСТРАЦІЯ (Auth)
-========================================= */
-.auth-wrapper {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   Дашборд (dashboard.html)
+   ========================================= */
+.stat-card {
+    border-left: 4px solid;
+    border-radius: 0.5rem;
 }
-.auth-card {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 1rem;
-    border: none;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+.stat-srs { border-left-color: #0d6efd; } /* Синій */
+.stat-words { border-left-color: #198754; } /* Зелений */
+.stat-streak { border-left-color: #ffc107; } /* Жовтий */
+
+.action-card {
+    transition: transform 0.2s;
+    cursor: pointer;
 }
-
-/* =========================================
-   ДАШБОРД (Dashboard)
-========================================= */
-.stat-card { border-left: 4px solid; border-radius: 0.5rem; }
-.stat-srs { border-left-color: #0d6efd; }
-.stat-words { border-left-color: #198754; }
-.stat-streak { border-left-color: #ffc107; }
-
-.action-card { transition: transform 0.2s; cursor: pointer; }
 .action-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 /* =========================================
-   БІБЛІОТЕКА ЧИТАННЯ ТА СЛОВНИК
-========================================= */
-.text-card, .topic-card {
+   Бібліотека та Читання (library_list.html, article_detail.html)
+   ========================================= */
+.text-card {
     transition: all 0.3s ease;
     border: none;
     border-radius: 12px;
     overflow: hidden;
 }
-.text-card:hover, .topic-card:hover {
+.text-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+.filter-sidebar {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+.badge-level {
+    font-size: 0.8rem;
+    padding: 0.4em 0.8em;
+}
+.bookmark-btn {
+    color: #adb5bd;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+.bookmark-btn:hover, .bookmark-btn.saved { color: #ffc107; }
+.hero-banner {
+    border-radius: 16px;
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    color: white;
+}
+.article-container {
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.2rem;
+}
+.sticky-sidebar {
+    position: sticky;
+    top: 20px;
+}
+
+/* =========================================
+   Тренування / Картки (training.html)
+   ========================================= */
+.flashcard {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: white;
+    border: 2px solid #e9ecef;
+}
+.word-en {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #212529;
+    letter-spacing: -1px;
+}
+.word-uk {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0d6efd;
+}
+.example-sentence {
+    font-size: 1.2rem;
+    color: #6c757d;
+    font-style: italic;
+}
+.fade-in { animation: fadeIn 0.4s ease-in forwards; }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.srs-btn {
+    padding: 12px 0;
+    font-weight: 600;
+    border-radius: 12px;
+}
+#cards-left { transition: all 0.3s; }
+
+/* =========================================
+   Словник (dictionary.html)
+   ========================================= */
+.table-hover tbody tr:hover {
+    background-color: #f1f5f9;
+    transition: background-color 0.2s;
+}
+.add-btn { transition: all 0.2s; }
+.category-tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* =========================================
+   Граматика (grammar_topics.html, grammar_quiz.html)
+   ========================================= */
+.topic-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 12px;
+}
+.topic-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
 }
-.card-img-top { height: 180px; object-fit: cover; }
-.badge-level { font-size: 0.8rem; padding: 0.4em 0.8em; }
-.bookmark-btn { color: #adb5bd; transition: color 0.2s; cursor: pointer; }
-.bookmark-btn:hover, .bookmark-btn.saved { color: #ffc107; }
-.hero-banner { border-radius: 16px; background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%); color: white; }
-.category-tag { font-size: 0.75rem; font-weight: 500; }
-
-.article-container { line-height: 1.8; color: #333; font-size: 1.2rem; }
-.sticky-sidebar { position: sticky; top: 20px; }
-
-/* Таблиця словника */
-.table-hover tbody tr:hover { background-color: #f1f5f9; transition: background-color 0.2s; }
-.add-btn { transition: all 0.2s; }
-
-/* =========================================
-   ГРАМАТИКА (Тести)
-========================================= */
-.quiz-container { max-width: 700px; margin: 0 auto; }
-.icon-wrapper { width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; border-radius: 12px; font-size: 1.5rem; }
+.icon-wrapper {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
 .bg-tenses { background-color: #e0f2fe; color: #0284c7; }
 .bg-articles { background-color: #fef08a; color: #ca8a04; }
 .bg-modals { background-color: #fce7f3; color: #db2777; }
 
+.quiz-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
 .option-btn {
     text-align: left;
     padding: 15px 20px;
@@ -83,31 +167,14 @@ body {
     margin-bottom: 15px;
     width: 100%;
 }
-.option-btn:hover:not(:disabled) { border-color: #0d6efd; background-color: #f1f5f9; }
-.option-btn.correct { border-color: #198754; background-color: #d1e7dd; color: #0f5132; }
-.option-btn.incorrect { border-color: #dc3545; background-color: #f8d7da; color: #842029; }
-.explanation-box { display: none; background-color: #e2e3e5; border-left: 5px solid #6c757d; }
-
-/* =========================================
-   КАРТКИ SRS (Flashcards)
-========================================= */
-.flashcard {
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    background-color: white;
-    border: 2px solid #e9ecef;
+.option-btn:hover:not(:disabled) {
+    border-color: #0d6efd;
+    background-color: #f1f5f9;
 }
-.word-en { font-size: 3.5rem; font-weight: 800; color: #212529; letter-spacing: -1px; }
-.word-uk { font-size: 1.8rem; font-weight: 600; color: #0d6efd; }
-.example-sentence { font-size: 1.2rem; color: #6c757d; font-style: italic; }
-.srs-btn { padding: 12px 0; font-weight: 600; border-radius: 12px; }
-
-.fade-in { animation: fadeIn 0.4s ease-in forwards; }
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+.option-btn.correct { border-color: #198754 !important; background-color: #d1e7dd !important; color: #0f5132 !important; }
+.option-btn.incorrect { border-color: #dc3545 !important; background-color: #f8d7da !important; color: #842029 !important; }
+.explanation-box {
+    display: none;
+    background-color: #e2e3e5;
+    border-left: 5px solid #6c757d;
 }

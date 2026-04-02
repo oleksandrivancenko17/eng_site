@@ -3,17 +3,7 @@
 
 {% block title %}Граматика - EngLearn{% endblock %}
 
-{% block extra_css %}
-<style>
-    .topic-card { transition: all 0.3s ease; border: none; border-radius: 12px; }
-    .topic-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important; }
-    .icon-wrapper { width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; border-radius: 12px; font-size: 1.5rem; }
-    
-    .bg-tenses { background-color: #e0f2fe; color: #0284c7; }
-    .bg-articles { background-color: #fef08a; color: #ca8a04; }
-    .bg-modals { background-color: #fce7f3; color: #db2777; }
-</style>
-{% endblock %}
+{% block extra_css %}{% endblock %}
 
 {% block content %}
 <div class="container mb-5 mt-4">
@@ -102,24 +92,5 @@
 {% endblock %}
 
 {% block extra_js %}
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const filterSelect = document.getElementById('level-filter');
-        const topicCards = document.querySelectorAll('.topic-item');
-
-        filterSelect.addEventListener('change', function() {
-            const selectedLevel = this.value;
-
-            topicCards.forEach(card => {
-                const cardLevel = card.getAttribute('data-level');
-
-                if (selectedLevel === 'all' || cardLevel.startsWith(selectedLevel)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-    });
-</script>
+    <script src="{% static 'js/grammar.js' %}"></script>
 {% endblock %}

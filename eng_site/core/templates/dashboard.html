@@ -1,40 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Дашборд - EngLearn{% endblock %}
 
-{% block extra_css %}
-    <style>
-        .stat-card {
-            border-left: 4px solid;
-            border-radius: 0.5rem;
-        }
-
-        .stat-srs {
-            border-left-color: #0d6efd;
-        }
-
-        /* Синій */
-        .stat-words {
-            border-left-color: #198754;
-        }
-
-        /* Зелений */
-        .stat-streak {
-            border-left-color: #ffc107;
-        }
-
-        /* Жовтий */
-        .action-card {
-            transition: transform 0.2s;
-            cursor: pointer;
-        }
-
-        .action-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-        }
-    </style>
-{% endblock %}
+{% block extra_css %}{% endblock %}
 
 {% block content %}
     <div class="container py-4">
