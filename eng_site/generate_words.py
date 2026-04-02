@@ -1,4 +1,3 @@
-
 import os
 import json
 import time
@@ -12,13 +11,21 @@ API_KEY = os.getenv("GEMINI_API_KEY")
 
 client = genai.Client(api_key=API_KEY)
 
-MODEL_ID = 'gemini-2.5-flash'
-
 
 def load_words(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         words = f.read().split()
     return [w.strip() for w in words if w.strip()]
+
+
+MODELS_TO_TRY = [
+    'gemini-3.1-flash-lite-preview',
+
+    'gemini-3-flash-preview',
+    'gemini-2.5-flash-lite',
+
+    'gemma-3-27b-it'
+]
 
 
 def generate_json_for_batch(words_batch):
@@ -38,18 +45,40 @@ def generate_json_for_batch(words_batch):
     }}
     """
 
-    try:
-        response = client.models.generate_content(
-            model=MODEL_ID,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json",
+    for model_name in MODELS_TO_TRY:
+        try:
+            response = client.models.generate_content(
+                model=model_name,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                )
             )
-        )
-        return json.loads(response.text)
-    except Exception as e:
-        print(f"❌ Помилка генерації: {e}")
-        return []
+
+            if not response.text:
+                continue
+
+            return json.loads(response.text)
+
+
+        except Exception as e:
+
+            error_msg = str(e)
+
+            if '429' in error_msg or 'RESOURCE_EXHAUSTED' in error_msg:
+                print(f"⚠️ Ліміт для {model_name} вичерпано. Перемикаємось...")
+                continue
+
+            elif '503' in error_msg or 'UNAVAILABLE' in error_msg:
+                print(f"⚠️ Модель {model_name} перевантажена (503). Перемикаємось...")
+                continue
+
+            else:
+                print(f"❌ Невідома помилка для {model_name}: {e}")
+                continue
+
+    print("🛑 ВСІ МОДЕЛІ ВИЧЕРПАНО! Сесію доведеться зупинити.")
+    return None
 
 
 def main():
@@ -60,26 +89,58 @@ def main():
         print(f"Файл {source_file} не знайдено!")
         return
 
-    words = load_words(source_file)
-    total_words = len(words)
-    print(f"🚀 Знайдено слів для обробки: {total_words}")
+    all_source_words = load_words(source_file)
 
-    batch_size = 40
-    all_results = []
+    already_done_words = set()
+    existing_data = []
+    if os.path.exists(output_file):
+        try:
+            with open(output_file, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+                already_done_words = {item['english_word'].lower() for item in existing_data}
+        except:
+            existing_data = []
 
-    for i in range(0, total_words, batch_size):
-        batch = words[i:i + batch_size]
-        print(f"⏳ Обробка слів {i + 1} - {min(i + batch_size, total_words)} із {total_words}...")
+    words_to_process = [w for w in all_source_words if w.lower() not in already_done_words]
+
+    total_total = len(all_source_words)
+    to_do_count = len(words_to_process)
+
+    print(f"📊 Всього у файлі: {total_total}")
+    print(f"✅ Вже оброблено: {len(already_done_words)}")
+    print(f"🚀 Залишилось зробити: {to_do_count}")
+
+    if to_do_count == 0:
+        print("Всі слова вже оброблені!")
+        return
+
+    batch_size = 150
+    all_results = existing_data
+
+    for i in range(0, to_do_count, batch_size):
+        batch = words_to_process[i:i + batch_size]
+        print(f"⏳ Обробка пачки ({i + 1}/{to_do_count})...")
 
         batch_result = generate_json_for_batch(batch)
-        all_results.extend(batch_result)
 
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(all_results, f, ensure_ascii=False, indent=4)
+        if batch_result is None:
+            print("Зупиняємо скрипт. Спробуйте завтра.")
+            break
 
-        time.sleep(4)
+        if batch_result:
+            all_results.extend(batch_result)
 
-    print(f"✅ Генерацію успішно завершено! Дані збережено у {output_file}.")
+        if batch_result:
+            all_results.extend(batch_result)
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(all_results, f, ensure_ascii=False, indent=4)
+        else:
+            print("🛑 Квоту вичерпано остаточно. Спробуйте через кілька годин або завтра.")
+            break
+
+        time.sleep(10)
+
+    print(f"🏁 Сесію завершено. Прогрес збережено у {output_file}.")
 
 
 if __name__ == '__main__':
