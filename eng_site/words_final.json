@@ -1,0 +1,5861 @@
+[
+    {
+        "english_word": "a",
+        "translation": "невизначений артикль; один; будь-який",
+        "example": "I have a book.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "abandon",
+        "translation": "покинути; залишити; відмовитися від",
+        "example": "The crew had to abandon the ship.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "ability",
+        "translation": "здатність; вміння; хист",
+        "example": "She has the ability to learn quickly.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "able",
+        "translation": "спроможний; здібний; в змозі",
+        "example": "I am able to help you.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "about",
+        "translation": "про; близько; приблизно",
+        "example": "Tell me about your day.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "above",
+        "translation": "над; вище",
+        "example": "The plane flew above the clouds.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "abroad",
+        "translation": "за кордоном",
+        "example": "She decided to study abroad.",
+        "level": "A2",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "absolute",
+        "translation": "абсолютний; повний; безумовний",
+        "example": "It's an absolute pleasure.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "absolutely",
+        "translation": "абсолютно; повністю; безумовно",
+        "example": "\"Are you sure?\" \"Absolutely!\"",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "academic",
+        "translation": "академічний; навчальний",
+        "example": "He has a strong academic background.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "accept",
+        "translation": "приймати; погоджуватися",
+        "example": "I accept your offer.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "acceptable",
+        "translation": "прийнятний; допустимий",
+        "example": "That behavior is not acceptable.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "access",
+        "translation": "доступ",
+        "example": "Do you have access to the internet?",
+        "level": "B1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "accident",
+        "translation": "нещасний випадок; аварія",
+        "example": "She was in a car accident.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "accommodation",
+        "translation": "житло; помешкання",
+        "example": "We found cheap accommodation in the city center.",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "accompany",
+        "translation": "супроводжувати",
+        "example": "He will accompany her to the party.",
+        "level": "B2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "according to",
+        "translation": "згідно з; відповідно до",
+        "example": "According to the news, it will rain tomorrow.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "account",
+        "translation": "рахунок; звіт; обліковий запис",
+        "example": "I need to check my bank account.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "accurate",
+        "translation": "точний; правильний",
+        "example": "The report needs to be accurate.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "accuse",
+        "translation": "звинувачувати",
+        "example": "They accused him of lying.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "achieve",
+        "translation": "досягати",
+        "example": "She wants to achieve her goals.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "achievement",
+        "translation": "досягнення",
+        "example": "Graduating was a great achievement.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "acknowledge",
+        "translation": "визнавати; підтверджувати; дякувати",
+        "example": "He acknowledged her contribution to the project.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "acquire",
+        "translation": "набувати; здобувати; отримувати",
+        "example": "She acquired new skills during the course.",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "across",
+        "translation": "через; крізь; по той бік",
+        "example": "They walked across the bridge.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "act",
+        "translation": "діяти; вчинок; акт",
+        "example": "He acted very bravely.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "action",
+        "translation": "дія; вчинок; акція",
+        "example": "We need to take action now.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "active",
+        "translation": "активний; діяльний",
+        "example": "He leads a very active lifestyle.",
+        "level": "A2",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "activity",
+        "translation": "діяльність; заняття",
+        "example": "What activities do you enjoy?",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "actor",
+        "translation": "актор",
+        "example": "He is a famous actor.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "actress",
+        "translation": "акторка",
+        "example": "She is a talented actress.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "actual",
+        "translation": "фактичний; дійсний",
+        "example": "What's the actual cost?",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "actually",
+        "translation": "насправді; фактично; дійсно",
+        "example": "I actually like this movie.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "ad",
+        "translation": "реклама; оголошення",
+        "example": "I saw an ad for a new car.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "adapt",
+        "translation": "адаптувати; пристосовуватися",
+        "example": "You need to adapt to new circumstances.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "add",
+        "translation": "додавати",
+        "example": "Please add sugar to my coffee.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "addition",
+        "translation": "додаток; додавання",
+        "example": "In addition to that, we also need...",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "additional",
+        "translation": "додатковий",
+        "example": "Do you have any additional questions?",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "address",
+        "translation": "адреса; звертатися",
+        "example": "What's your address?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "administration",
+        "translation": "адміністрація; управління",
+        "example": "The university administration handles all student affairs.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "admire",
+        "translation": "захоплюватися; милуватися",
+        "example": "I admire her for her courage and determination.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "admit",
+        "translation": "визнавати; допускати",
+        "example": "He had to admit that he was wrong.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "adopt",
+        "translation": "усиновлювати; приймати (закон, ідею)",
+        "example": "They decided to adopt a child from a different country.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "adult",
+        "translation": "дорослий (іменник та прикметник)",
+        "example": "Children must be accompanied by an adult.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "advance",
+        "translation": "просуватися; прогрес",
+        "example": "We need to advance quickly with this project.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "advanced",
+        "translation": "просунутий; передовий",
+        "example": "She is studying advanced mathematics at university.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "advantage",
+        "translation": "перевага",
+        "example": "What are the advantages of living in the city?",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "adventure",
+        "translation": "пригода",
+        "example": "Let's go on an adventure this summer!",
+        "level": "A2",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "advertise",
+        "translation": "рекламувати",
+        "example": "They need to advertise their new product more effectively.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "advertisement",
+        "translation": "реклама; оголошення",
+        "example": "I saw an advertisement for a new car on TV.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "advertising",
+        "translation": "реклама; рекламування",
+        "example": "The company spends a lot on digital advertising.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "advice",
+        "translation": "порада (незлічуване)",
+        "example": "Can you give me some advice on learning English?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "advise",
+        "translation": "радити",
+        "example": "I advise you to study harder for your exams.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "affair",
+        "translation": "справа; роман",
+        "example": "It's a private affair, so please don't discuss it.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "affect",
+        "translation": "впливати",
+        "example": "The weather can seriously affect your mood.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "afford",
+        "translation": "дозволити собі (фінансово)",
+        "example": "I can't afford a new car right now.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "afraid",
+        "translation": "наляканий; боятися",
+        "example": "I'm afraid of spiders, they really scare me.",
+        "level": "A1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "after",
+        "translation": "після",
+        "example": "Let's meet after work for a coffee.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "afternoon",
+        "translation": "пообідній час",
+        "example": "Good afternoon, everyone! How are you?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "afterwards",
+        "translation": "згодом; потім",
+        "example": "We went to the cinema and afterwards we had dinner.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "again",
+        "translation": "знову",
+        "example": "Please say that again, I didn't hear you.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "against",
+        "translation": "проти",
+        "example": "Don't lean against the wall, it's freshly painted.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "age",
+        "translation": "вік",
+        "example": "What is your age? I'm 25 years old.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "aged",
+        "translation": "віком",
+        "example": "He is a man aged 60 with a lot of experience.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "agency",
+        "translation": "агентство; установа",
+        "example": "She works for an advertising agency in the city center.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "agenda",
+        "translation": "порядок денний",
+        "example": "What's on the agenda for today's meeting?",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "agent",
+        "translation": "агент",
+        "example": "My travel agent booked my flight and hotel.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "aggressive",
+        "translation": "агресивний",
+        "example": "The dog looked very aggressive, so we stayed away.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "ago",
+        "translation": "тому (про час)",
+        "example": "I met her two years ago at a conference.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "agree",
+        "translation": "погоджуватися",
+        "example": "I agree with you completely on this matter.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "agreement",
+        "translation": "угода; згода",
+        "example": "We finally reached an agreement after a long discussion.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "ah",
+        "translation": "ах (вигук)",
+        "example": "Ah, now I understand what you mean!",
+        "level": "A1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "ahead",
+        "translation": "вперед; попереду",
+        "example": "Go straight ahead and you'll see the station.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "aid",
+        "translation": "допомога",
+        "example": "He came to her aid when she fell.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "aim",
+        "translation": "мета; ціль",
+        "example": "My aim is to learn French fluently by next year.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "air",
+        "translation": "повітря",
+        "example": "The air is so fresh and clean in the mountains.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "aircraft",
+        "translation": "літак; літальний апарат",
+        "example": "The aircraft took off smoothly from the runway.",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "airline",
+        "translation": "авіакомпанія",
+        "example": "Which airline are you flying with to London?",
+        "level": "A2",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "airport",
+        "translation": "аеропорт",
+        "example": "I'll meet you at the airport at 3 PM.",
+        "level": "A1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "alarm",
+        "translation": "тривога, будильник",
+        "example": "The alarm clock rang at 6 AM.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "album",
+        "translation": "альбом",
+        "example": "She looked through her old photo album.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "alcohol",
+        "translation": "алкоголь",
+        "example": "Alcohol consumption should be moderate.",
+        "level": "B1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "alcoholic",
+        "translation": "алкоголік (іменник), алкогольний (прикметник)",
+        "example": "He is an alcoholic, but he is trying to recover.",
+        "level": "B2",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "alive",
+        "translation": "живий",
+        "example": "Is your cat still alive?",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "all",
+        "translation": "все, всі",
+        "example": "All students passed the exam.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "all right",
+        "translation": "все гаразд, добре",
+        "example": "Don't worry, everything will be all right.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "allow",
+        "translation": "дозволяти",
+        "example": "My parents don't allow me to stay out late.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "almost",
+        "translation": "майже",
+        "example": "I'm almost finished with my homework.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "alone",
+        "translation": "сам, на самоті",
+        "example": "She prefers to be alone when she works.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "along",
+        "translation": "уздовж, разом (з)",
+        "example": "We walked along the river.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "already",
+        "translation": "вже",
+        "example": "I've already finished my lunch.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "also",
+        "translation": "також",
+        "example": "He also speaks French.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "alter",
+        "translation": "змінювати, переробляти",
+        "example": "You might need to alter your plans.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "alternative",
+        "translation": "альтернатива",
+        "example": "Do we have an alternative solution?",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "although",
+        "translation": "хоча",
+        "example": "Although it was raining, we went for a walk.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "always",
+        "translation": "завжди",
+        "example": "She always drinks coffee in the morning.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "amazed",
+        "translation": "вражений, здивований",
+        "example": "I was amazed by her performance.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "amazing",
+        "translation": "дивовижний, вражаючий",
+        "example": "The view from the mountain was amazing.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "ambition",
+        "translation": "амбіція, прагнення",
+        "example": "His ambition is to become a doctor.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "ambitious",
+        "translation": "амбітний",
+        "example": "She is a very ambitious student.",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "among",
+        "translation": "серед",
+        "example": "He lives among the trees.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "amount",
+        "translation": "кількість, сума",
+        "example": "What amount of money do you need?",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "analyse",
+        "translation": "аналізувати",
+        "example": "We need to analyse the data carefully.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "analysis",
+        "translation": "аналіз",
+        "example": "The analysis showed interesting results.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "ancient",
+        "translation": "стародавній",
+        "example": "They discovered an ancient city.",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "and",
+        "translation": "і, та",
+        "example": "I like coffee and tea.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "anger",
+        "translation": "гнів, злість",
+        "example": "He couldn't control his anger.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "angle",
+        "translation": "кут",
+        "example": "The photographer shot from a low angle.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "angrily",
+        "translation": "сердито, розгнівано",
+        "example": "He spoke angrily to his boss.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "angry",
+        "translation": "злий, сердитий",
+        "example": "Why are you so angry?",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "animal",
+        "translation": "тварина",
+        "example": "My favorite animal is a dog.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "ankle",
+        "translation": "щиколотка",
+        "example": "She twisted her ankle playing soccer.",
+        "level": "B1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "anniversary",
+        "translation": "річниця",
+        "example": "We celebrated our tenth wedding anniversary.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "announce",
+        "translation": "оголошувати",
+        "example": "The company will announce the new product next week.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "announcement",
+        "translation": "оголошення",
+        "example": "Did you hear the announcement?",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "annoy",
+        "translation": "дратувати, набридати",
+        "example": "Stop annoying your sister!",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "annoyed",
+        "translation": "роздратований",
+        "example": "I was annoyed by the constant noise.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "annoying",
+        "translation": "надокучливий, дратівливий",
+        "example": "That buzzing sound is very annoying.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "annual",
+        "translation": "щорічний",
+        "example": "The company holds an annual meeting in December.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "another",
+        "translation": "інший, ще один",
+        "example": "Can I have another cup of coffee?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "answer",
+        "translation": "відповідь, відповідати",
+        "example": "Please answer the question truthfully.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "anxious",
+        "translation": "тривожний, занепокоєний",
+        "example": "She felt anxious about her job interview.",
+        "level": "B2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "any",
+        "translation": "будь-який, жодний (в заперечних/питальних реченнях)",
+        "example": "Do you have any questions for me?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "any more",
+        "translation": "більше (не)",
+        "example": "I don't have any more sugar.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": " anybody",
+        "translation": "будь-хто",
+        "example": "Is anybody home right now?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "anyone",
+        "translation": "будь-хто",
+        "example": "Does anyone know the answer?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "anything",
+        "translation": "будь-що",
+        "example": "I can't find anything to eat in the fridge.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "anyway",
+        "translation": "в будь-якому випадку, так чи інакше",
+        "example": "It started raining, but we went for a walk anyway.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "anywhere",
+        "translation": "будь-де, куди завгодно",
+        "example": "I can't find my keys anywhere.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "apart",
+        "translation": "окремо, нарізно",
+        "example": "The two friends stood far apart after their argument.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "apartment",
+        "translation": "квартира",
+        "example": "They live in a cozy apartment downtown.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "apologize",
+        "translation": "вибачатися",
+        "example": "He apologized for his rude behavior.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "app",
+        "translation": "додаток (мобільний)",
+        "example": "I downloaded a new app to learn languages.",
+        "level": "A2",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "apparent",
+        "translation": "очевидний, явний",
+        "example": "It was apparent that he was tired.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "apparently",
+        "translation": "очевидно, мабуть",
+        "example": "Apparently, the store is closed today.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "appeal",
+        "translation": "привабливість, звернення; приваблювати",
+        "example": "The idea of a quiet evening appeals to me.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "appear",
+        "translation": "з'являтися, здаватися",
+        "example": "A new moon will appear in the sky tonight.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "appearance",
+        "translation": "зовнішність, поява",
+        "example": "Her sudden appearance surprised everyone.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "apple",
+        "translation": "яблуко",
+        "example": "I enjoy eating a fresh apple every morning.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "application",
+        "translation": "заява, застосування, додаток",
+        "example": "She submitted her application for the university.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "apply",
+        "translation": "подавати заяву, застосовувати",
+        "example": "You should apply for that job opening.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "appointment",
+        "translation": "зустріч (ділова, з лікарем)",
+        "example": "I have a doctor's appointment tomorrow morning.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "appreciate",
+        "translation": "цінувати, бути вдячним",
+        "example": "I truly appreciate your help with this project.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "approach",
+        "translation": "підхід, наближатися",
+        "example": "The train slowly approached the station.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "appropriate",
+        "translation": "відповідний, доречний",
+        "example": "Please wear appropriate attire for the ceremony.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "approval",
+        "translation": "схвалення, дозвіл",
+        "example": "We need the manager's approval to buy new equipment.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "approve",
+        "translation": "схвалювати, затверджувати",
+        "example": "The board approved the new marketing strategy.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "approximately",
+        "translation": "приблизно",
+        "example": "The journey takes approximately two hours.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "april",
+        "translation": "квітень",
+        "example": "My birthday is in April.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "architect",
+        "translation": "архітектор",
+        "example": "He hired an architect to design his new house.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "architecture",
+        "translation": "архітектура",
+        "example": "I find ancient Roman architecture fascinating.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "area",
+        "translation": "площа, район, область",
+        "example": "This is a beautiful green area in the city.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "argue",
+        "translation": "сперечатися, аргументувати",
+        "example": "They often argue about trivial things.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "argument",
+        "translation": "суперечка, аргумент",
+        "example": "They had a heated argument over politics.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "arise",
+        "translation": "виникати, з'являтися",
+        "example": "New challenges often arise during complex projects.",
+        "level": "C1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "arm",
+        "translation": "рука (від плеча до кисті), озброювати",
+        "example": "He broke his arm playing sports.",
+        "level": "A1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "armed",
+        "translation": "озброєний",
+        "example": "The guards were heavily armed.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "arms",
+        "translation": "зброя; руки",
+        "example": "The soldiers carried their arms into battle.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "army",
+        "translation": "армія",
+        "example": "He decided to join the army after finishing school.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "around",
+        "translation": "навколо, близько",
+        "example": "Let's walk around the lake.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "arrange",
+        "translation": "організовувати, домовлятися",
+        "example": "Can you arrange a meeting for next week?",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "arrangement",
+        "translation": "домовленість, розташування",
+        "example": "We have an arrangement to share the costs.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "arrest",
+        "translation": "арешт, заарештовувати",
+        "example": "The police made an arrest in connection with the crime.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "arrival",
+        "translation": "прибуття",
+        "example": "We are waiting for the arrival of the train.",
+        "level": "A2",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "arrive",
+        "translation": "прибувати",
+        "example": "What time will you arrive at the airport?",
+        "level": "A1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "art",
+        "translation": "мистецтво",
+        "example": "She enjoys visiting modern art galleries.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "article",
+        "translation": "стаття, артикль",
+        "example": "I read an interesting article about climate change.",
+        "level": "A2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "artificial",
+        "translation": "штучний",
+        "example": "Many foods contain artificial colors and flavors.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "artist",
+        "translation": "художник, артист",
+        "example": "Pablo Picasso was a famous Spanish artist.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "artistic",
+        "translation": "художній, артистичний",
+        "example": "The design of the building is very artistic.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "as",
+        "translation": "як, оскільки",
+        "example": "She works as a doctor in a big hospital.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "ashamed",
+        "translation": "засоромлений",
+        "example": "I felt ashamed of my rude behavior.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "ask",
+        "translation": "питати, просити",
+        "example": "Please ask me if you have any questions.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "asleep",
+        "translation": "сплячий",
+        "example": "The baby fell asleep in her mother's arms.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "aspect",
+        "translation": "аспект, сторона",
+        "example": "We need to consider every aspect of the project.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "assess",
+        "translation": "оцінювати",
+        "example": "It's important to assess the risks before making a decision.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "assessment",
+        "translation": "оцінка",
+        "example": "The teacher gave us an assessment of our progress.",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "assignment",
+        "translation": "завдання, доручення",
+        "example": "I have to finish my history assignment by Friday.",
+        "level": "A2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "assist",
+        "translation": "допомагати",
+        "example": "Can I assist you with your luggage?",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "assistant",
+        "translation": "помічник, асистент",
+        "example": "She works as a personal assistant to the CEO.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "associate",
+        "translation": "асоціювати, співробітник",
+        "example": "I associate the smell of cinnamon with Christmas.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "associated",
+        "translation": "пов'язаний",
+        "example": "There are often risks associated with new investments.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "association",
+        "translation": "асоціація, об'єднання",
+        "example": "He is a member of the local chess association.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "assume",
+        "translation": "припускати",
+        "example": "I assume you've already heard the news.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "at",
+        "translation": "в, на (прийменник місця, часу)",
+        "example": "We'll meet at the coffee shop at 7 PM.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "athlete",
+        "translation": "спортсмен",
+        "example": "She is a talented athlete who competes in many sports.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "atmosphere",
+        "translation": "атмосфера",
+        "example": "The restaurant had a very relaxed atmosphere.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "attach",
+        "translation": "прикріплювати, додавати",
+        "example": "Please attach your resume to the email.",
+        "level": "B1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "attack",
+        "translation": "напад, атакувати",
+        "example": "The city came under attack during the war.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "attempt",
+        "translation": "спроба, намагатися",
+        "example": "He made an attempt to break the world record.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "attend",
+        "translation": "відвідувати",
+        "example": "I plan to attend the conference next month.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "attention",
+        "translation": "увага",
+        "example": "Please pay attention to the safety instructions.",
+        "level": "A2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "attitude",
+        "translation": "ставлення",
+        "example": "She has a very positive attitude towards life.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "attract",
+        "translation": "приваблювати",
+        "example": "The new exhibition is expected to attract many visitors.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "attraction",
+        "translation": "привабливість, пам'ятка",
+        "example": "The Eiffel Tower is a major tourist attraction.",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "attractive",
+        "translation": "привабливий",
+        "example": "The job offer was very attractive.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "audience",
+        "translation": "аудиторія, глядачі",
+        "example": "The audience applauded loudly at the end of the show.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "august",
+        "translation": "серпень",
+        "example": "August is usually the hottest month of the year.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "aunt",
+        "translation": "тітка",
+        "example": "My aunt lives in another city.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "author",
+        "translation": "автор, письменник",
+        "example": "Who is the author of this book?",
+        "level": "A2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "authority",
+        "translation": "влада, повноваження, авторитет",
+        "example": "She has authority in her field.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "autumn",
+        "translation": "осінь",
+        "example": "Leaves change color in autumn.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "available",
+        "translation": "доступний, наявний",
+        "example": "Is this item still available?",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "average",
+        "translation": "середній, середнє значення",
+        "example": "The average temperature today is 20 degrees.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "avoid",
+        "translation": "уникати",
+        "example": "Try to avoid common mistakes.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "award",
+        "translation": "нагорода, присуджувати",
+        "example": "He received an award for his work.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "aware",
+        "translation": "усвідомлений, обізнаний",
+        "example": "Are you aware of the risks?",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "away",
+        "translation": "геть, далеко, відсутній",
+        "example": "Go away from here.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "awful",
+        "translation": "жахливий",
+        "example": "The weather was awful yesterday.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "baby",
+        "translation": "немовля, дитина",
+        "example": "The baby is sleeping.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "back",
+        "translation": "назад, спина, задній",
+        "example": "I'll be back soon.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "background",
+        "translation": "фон, походження",
+        "example": "What is your professional background?",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "backwards",
+        "translation": "назад (рух), навпаки",
+        "example": "He walked backwards.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bacteria",
+        "translation": "бактерії",
+        "example": "Some bacteria are harmful.",
+        "level": "B2",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "bad",
+        "translation": "поганий",
+        "example": "Don't feel bad about it.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "badly",
+        "translation": "погано, сильно (дуже)",
+        "example": "She sings badly.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bag",
+        "translation": "сумка, пакет",
+        "example": "I carry my books in a bag.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bake",
+        "translation": "пекти, випікати",
+        "example": "Let's bake a cake.",
+        "level": "A2",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "balance",
+        "translation": "баланс, рівновага, балансувати",
+        "example": "Try to find a work-life balance.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "ball",
+        "translation": "м'яч",
+        "example": "Let's play with a ball.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "ban",
+        "translation": "заборона, забороняти",
+        "example": "They want to ban smoking in public places.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "banana",
+        "translation": "банан",
+        "example": "I like to eat a banana for breakfast.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "band",
+        "translation": "гурт (музичний), стрічка, смуга",
+        "example": "My favorite band is playing tonight.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bank",
+        "translation": "банк, берег річки",
+        "example": "I need to go to the bank.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bar",
+        "translation": "бар, брусок, перегородка",
+        "example": "Let's meet at the bar.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "barrier",
+        "translation": "бар'єр, перешкода",
+        "example": "Language can be a barrier.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "base",
+        "translation": "основа, база, базуватися",
+        "example": "This theory is based on facts.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "baseball",
+        "translation": "бейсбол",
+        "example": "Baseball is popular in America.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "based",
+        "translation": "заснований, базований",
+        "example": "The movie is based on a true story.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "basic",
+        "translation": "базовий, основний",
+        "example": "Learn the basic rules first.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "basically",
+        "translation": "в основному, по суті",
+        "example": "Basically, we agree on this point.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "basis",
+        "translation": "основа, підґрунтя",
+        "example": "What is the basis for your decision?",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "basketball",
+        "translation": "баскетбол",
+        "example": "Do you play basketball?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bath",
+        "translation": "ванна, купання",
+        "example": "I'm going to take a bath.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bathroom",
+        "translation": "ванна кімната",
+        "example": "Where is the bathroom?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "battery",
+        "translation": "батарея, акумулятор",
+        "example": "My phone battery is low.",
+        "level": "A2",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "battle",
+        "translation": "битва, бій",
+        "example": "They won the battle.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "be",
+        "translation": "бути",
+        "example": "I want to be a doctor.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "beach",
+        "translation": "пляж",
+        "example": "We spent the day at the beach.",
+        "level": "A1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "bean",
+        "translation": "біб, квасоля",
+        "example": "I like to eat green beans.",
+        "level": "A2",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "bear",
+        "translation": "ведмідь",
+        "example": "A bear lives in the forest.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "beat",
+        "translation": "бити, перемагати",
+        "example": "She can beat him in a race.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "beautiful",
+        "translation": "красивий, прекрасний",
+        "example": "What a beautiful day!",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "beauty",
+        "translation": "краса",
+        "example": "The beauty of the landscape was breathtaking.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "because",
+        "translation": "тому що, бо",
+        "example": "I'm happy because it's sunny.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "become",
+        "translation": "ставати",
+        "example": "He wants to become an engineer.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bed",
+        "translation": "ліжко",
+        "example": "I'm going to bed now.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bedroom",
+        "translation": "спальня",
+        "example": "My bedroom is on the second floor.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bee",
+        "translation": "бджола",
+        "example": "A bee makes honey.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "beef",
+        "translation": "яловичина",
+        "example": "Do you prefer chicken or beef?",
+        "level": "A2",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "beer",
+        "translation": "пиво",
+        "example": "Would you like a glass of beer?",
+        "level": "A2",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "before",
+        "translation": "до, перед тим як",
+        "example": "Wash your hands before you eat.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "beg",
+        "translation": "просити, благати",
+        "example": "He had to beg for food.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "begin",
+        "translation": "починати",
+        "example": "Let's begin the lesson.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "beginning",
+        "translation": "початок",
+        "example": "This is just the beginning.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "behave",
+        "translation": "поводитися",
+        "example": "The children behaved well.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "behaviour",
+        "translation": "поведінка",
+        "example": "His behaviour was unacceptable.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "behind",
+        "translation": "позаду, за",
+        "example": "The car is behind the tree.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "being",
+        "translation": "буття, істота",
+        "example": "He enjoys being a student.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "belief",
+        "translation": "віра, переконання",
+        "example": "It's my belief that honesty is important.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "believe",
+        "translation": "вірити",
+        "example": "I believe in you.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "bell",
+        "translation": "дзвін, дзвінок",
+        "example": "The school bell rang.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "belong",
+        "translation": "належати",
+        "example": "This book belongs to me.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "below",
+        "translation": "нижче, під",
+        "example": "The temperature is below zero.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "belt",
+        "translation": "пояс, ремінь",
+        "example": "He fastened his seat belt.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bend",
+        "translation": "гнути, згинати",
+        "example": "Don't bend the rules.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "benefit",
+        "translation": "вигода, перевага",
+        "example": "The new system has many benefits.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "bent",
+        "translation": "зігнутий",
+        "example": "The old man had a bent back.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "best",
+        "translation": "найкращий",
+        "example": "This is the best pizza ever.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bet",
+        "translation": "тримати парі, ставка",
+        "example": "I bet you can do it.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "better",
+        "translation": "кращий, краще",
+        "example": "I feel much better today.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "between",
+        "translation": "між",
+        "example": "The shop is between the bank and the post office.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "beyond",
+        "translation": "за межами, по той бік",
+        "example": "The mountains are beyond the river.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bicycle",
+        "translation": "велосипед",
+        "example": "I ride my bicycle to work.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "big",
+        "translation": "великий",
+        "example": "He lives in a big house.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bike",
+        "translation": "велосипед",
+        "example": "My new bike is red.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bill",
+        "translation": "рахунок, законопроект",
+        "example": "Can I have the bill, please?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "billion",
+        "translation": "мільярд",
+        "example": "The company made a billion dollars last year.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "bin",
+        "translation": "сміттєвий бак, контейнер",
+        "example": "Please put the rubbish in the bin.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "biology",
+        "translation": "біологія",
+        "example": "She is studying biology at university.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "bird",
+        "translation": "птах",
+        "example": "A small bird sang outside my window.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "birth",
+        "translation": "народження",
+        "example": "The birth of her child was a happy event.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "birthday",
+        "translation": "день народження",
+        "example": "Happy birthday!",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "biscuit",
+        "translation": "печиво",
+        "example": "Would you like a biscuit with your tea?",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "bit",
+        "translation": "шматочок, трохи",
+        "example": "I need a bit more sugar.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bite",
+        "translation": "кусати; укус",
+        "example": "Be careful, the dog might bite.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bitter",
+        "translation": "гіркий",
+        "example": "The coffee was very bitter.",
+        "level": "B1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "black",
+        "translation": "чорний",
+        "example": "She wore a beautiful black dress.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "blame",
+        "translation": "звинувачувати; провина",
+        "example": "Don't blame me for your mistakes.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "blank",
+        "translation": "порожній; пропуск",
+        "example": "Please fill in the blanks on the form.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "blind",
+        "translation": "сліпий",
+        "example": "He has been blind since birth.",
+        "level": "B1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "block",
+        "translation": "блок; блокувати",
+        "example": "A fallen tree blocked the road.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "blog",
+        "translation": "блог",
+        "example": "She writes interesting posts on her travel blog.",
+        "level": "B1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "blonde",
+        "translation": "блондинка (про людину); світле волосся",
+        "example": "She has beautiful blonde hair.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "blood",
+        "translation": "кров",
+        "example": "He lost a lot of blood in the accident.",
+        "level": "B1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "blow",
+        "translation": "дути",
+        "example": "The wind began to blow strongly.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "blue",
+        "translation": "синій",
+        "example": "The sky is clear blue today.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "board",
+        "translation": "дошка; сідати на (корабель, літак)",
+        "example": "Write the answer on the board.",
+        "level": "A2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "boat",
+        "translation": "човен",
+        "example": "They went for a ride in a small boat.",
+        "level": "A1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "body",
+        "translation": "тіло",
+        "example": "Keep your body healthy with exercise.",
+        "level": "A2",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "boil",
+        "translation": "кип'ятити; кипіти",
+        "example": "Please boil some water for tea.",
+        "level": "A2",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "bomb",
+        "translation": "бомба; бомбардувати",
+        "example": "They defused the bomb just in time.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bond",
+        "translation": "зв'язок; облігація",
+        "example": "There's a strong bond between them.",
+        "level": "B2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "bone",
+        "translation": "кістка",
+        "example": "Dogs love to chew on bones.",
+        "level": "A2",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "book",
+        "translation": "книга; бронювати",
+        "example": "I'm reading an interesting book.",
+        "level": "A1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "boot",
+        "translation": "черевик; багажник (автомобіля)",
+        "example": "My new winter boots are very warm.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "border",
+        "translation": "кордон",
+        "example": "We crossed the border into Canada.",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "bored",
+        "translation": "нудьгуючий",
+        "example": "I'm bored, let's do something fun.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "boring",
+        "translation": "нудний",
+        "example": "This movie is so boring.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "born",
+        "translation": "народжений",
+        "example": "I was born in July.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "borrow",
+        "translation": "позичати (брати)",
+        "example": "Can I borrow your pen?",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "boss",
+        "translation": "бос, начальник",
+        "example": "My boss is very strict.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "both",
+        "translation": "обидва",
+        "example": "Both of my parents are doctors.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bother",
+        "translation": "турбувати; клопіт",
+        "example": "Don't bother me while I'm working.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "bottle",
+        "translation": "пляшка",
+        "example": "Please pass me the water bottle.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bottom",
+        "translation": "дно; низ",
+        "example": "The key is at the bottom of the bag.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bowl",
+        "translation": "миска, тарілка",
+        "example": "She poured cereal into a bowl.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "box",
+        "translation": "коробка, ящик",
+        "example": "Please put the old toys in the box.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "boy",
+        "translation": "хлопчик, хлопець",
+        "example": "The boy is playing in the park.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "boyfriend",
+        "translation": "хлопець (бойфренд)",
+        "example": "She went to the cinema with her boyfriend.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "brain",
+        "translation": "мозок",
+        "example": "The human brain is very complex.",
+        "level": "B1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "branch",
+        "translation": "гілка; філія, відділення",
+        "example": "A bird built a nest on the tree branch.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "brand",
+        "translation": "бренд, марка",
+        "example": "What is your favorite clothing brand?",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "brave",
+        "translation": "сміливий, хоробрий",
+        "example": "The brave knight saved the princess.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "bread",
+        "translation": "хліб",
+        "example": "I usually eat bread with butter for breakfast.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "break",
+        "translation": "перерва; ламати",
+        "example": "Let's take a short break.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "breakfast",
+        "translation": "сніданок",
+        "example": "What do you want for breakfast?",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "breast",
+        "translation": "груди",
+        "example": "She fed the baby from her breast.",
+        "level": "B1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "breath",
+        "translation": "подих, дихання",
+        "example": "Take a deep breath and relax.",
+        "level": "B1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "breathe",
+        "translation": "дихати",
+        "example": "It's hard to breathe in the polluted air.",
+        "level": "A2",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "breathing",
+        "translation": "дихання (процес)",
+        "example": "His breathing became shallow after the run.",
+        "level": "B1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "bride",
+        "translation": "наречена",
+        "example": "The bride looked beautiful in her white dress.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "bridge",
+        "translation": "міст",
+        "example": "We crossed the river using the old bridge.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "brief",
+        "translation": "короткий, стислий",
+        "example": "He gave a brief explanation of the project.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "bright",
+        "translation": "яскравий; розумний",
+        "example": "The sun is very bright today.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "brilliant",
+        "translation": "блискучий, геніальний",
+        "example": "That was a brilliant idea!",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "bring",
+        "translation": "приносити",
+        "example": "Please bring your books to class tomorrow.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "broad",
+        "translation": "широкий",
+        "example": "The river is very broad at this point.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "broadcast",
+        "translation": "трансляція; транслювати",
+        "example": "The news was broadcast live on TV.",
+        "level": "B2",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "broken",
+        "translation": "зламаний",
+        "example": "My phone screen is broken.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "brother",
+        "translation": "брат",
+        "example": "I have one brother and two sisters.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "brown",
+        "translation": "коричневий",
+        "example": "She has long brown hair.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "brush",
+        "translation": "щітка; чистити щіткою",
+        "example": "Don't forget to brush your teeth.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bubble",
+        "translation": "бульбашка",
+        "example": "Children love to blow bubbles.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "budget",
+        "translation": "бюджет",
+        "example": "We need to stick to our strict budget.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "build",
+        "translation": "будувати",
+        "example": "They are going to build a new hospital.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "building",
+        "translation": "будівля",
+        "example": "That's the tallest building in the city.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bullet",
+        "translation": "куля",
+        "example": "The police found a bullet near the crime scene.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bunch",
+        "translation": "пучок, гроно",
+        "example": "She bought a bunch of flowers.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "burn",
+        "translation": "горіти; палити; опік",
+        "example": "Be careful not to burn yourself.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bury",
+        "translation": "ховати (поховати)",
+        "example": "The dog likes to bury its bones in the garden.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bus",
+        "translation": "автобус",
+        "example": "I take the bus to work every day.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bush",
+        "translation": "кущ",
+        "example": "There is a beautiful rose bush in the garden.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "business",
+        "translation": "бізнес, справа",
+        "example": "He started his own business last year.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "businessman",
+        "translation": "бізнесмен",
+        "example": "My uncle is a successful businessman.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "busy",
+        "translation": "зайнятий",
+        "example": "I'm too busy to talk right now.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "but",
+        "translation": "але",
+        "example": "I want to go, but I'm too tired.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "butter",
+        "translation": "вершкове масло",
+        "example": "I like to spread butter on my toast.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "button",
+        "translation": "ґудзик, кнопка",
+        "example": "Press the red button to start the machine.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "buy",
+        "translation": "купувати",
+        "example": "I need to buy some milk from the store.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "by",
+        "translation": "біля, за допомогою, повз, до (про час)",
+        "example": "The book was written by a famous author.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "bye",
+        "translation": "бувай, до побачення",
+        "example": "See you later, bye!",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cable",
+        "translation": "кабель, трос",
+        "example": "Connect the TV with this cable.",
+        "level": "A2",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "cafe",
+        "translation": "кафе",
+        "example": "Let's meet at the cafe for coffee.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "cake",
+        "translation": "торт, тістечко",
+        "example": "She baked a delicious chocolate cake.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "calculate",
+        "translation": "обчислювати, розраховувати",
+        "example": "Can you calculate the total cost for me?",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "call",
+        "translation": "дзвонити, називати, виклик",
+        "example": "I'll call you later tonight.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "calm",
+        "translation": "спокійний, заспокоювати",
+        "example": "Try to stay calm in difficult situations.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "camera",
+        "translation": "камера, фотоапарат",
+        "example": "He bought a new digital camera.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "camp",
+        "translation": "табір, кемпінг, таборувати",
+        "example": "We decided to camp by the lake for the weekend.",
+        "level": "A2",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "campaign",
+        "translation": "кампанія",
+        "example": "The company launched a new advertising campaign.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "camping",
+        "translation": "кемпінг (діяльність)",
+        "example": "We are going camping next weekend in the mountains.",
+        "level": "A2",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "campus",
+        "translation": "кампус, територія університету",
+        "example": "The university campus is very beautiful.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "can",
+        "translation": "могти, бляшанка",
+        "example": "I can swim very well.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cancel",
+        "translation": "скасовувати",
+        "example": "They had to cancel the flight due to bad weather.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cancer",
+        "translation": "рак (хвороба)",
+        "example": "She is researching new treatments for cancer.",
+        "level": "B2",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "candidate",
+        "translation": "кандидат",
+        "example": "There are three candidates for the job position.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "cannot",
+        "translation": "не можу (скорочено від can not)",
+        "example": "I cannot come to the party tonight.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cap",
+        "translation": "кепка, ковпачок",
+        "example": "He wore a baseball cap to protect from the sun.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "capable",
+        "translation": "здатний, здібний",
+        "example": "She is capable of achieving great things.",
+        "level": "B2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "capacity",
+        "translation": "місткість, потужність, спроможність",
+        "example": "The stadium has a seating capacity of 50,000.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "capital",
+        "translation": "столиця, капітал (гроші), велика літера",
+        "example": "Paris is the capital of France.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "captain",
+        "translation": "капітан",
+        "example": "The captain steered the ship through the storm.",
+        "level": "A2",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "capture",
+        "translation": "захоплювати, знімати (на камеру)",
+        "example": "The police managed to capture the suspect.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "car",
+        "translation": "автомобіль, машина",
+        "example": "I drive my car to work every day.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "card",
+        "translation": "картка (банківська, гральна, вітальна)",
+        "example": "Do you accept credit card payments?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "care",
+        "translation": "піклуватися, догляд, турбота",
+        "example": "She takes good care of her plants.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "career",
+        "translation": "кар'єра",
+        "example": "He is planning his career path carefully.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "careful",
+        "translation": "обережний",
+        "example": "Be careful when crossing the road.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "carefully",
+        "translation": "обережно",
+        "example": "He opened the package very carefully.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "careless",
+        "translation": "необережний, безтурботний",
+        "example": "It was careless of him to leave the door unlocked.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "carpet",
+        "translation": "килим",
+        "example": "There is a beautiful carpet in the living room.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "carrot",
+        "translation": "морква",
+        "example": "Rabbits love to eat carrots.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "carry",
+        "translation": "нести, носити",
+        "example": "Can you help me carry these bags?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cartoon",
+        "translation": "мультфільм, карикатура",
+        "example": "My children love watching cartoons on TV.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "case",
+        "translation": "випадок, справа, валіза, футляр",
+        "example": "In this case, we need to act quickly.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cash",
+        "translation": "готівка",
+        "example": "Do you want to pay by card or with cash?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cast",
+        "translation": "кидати, акторський склад",
+        "example": "The director decided to cast a new actress in the main role.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "castle",
+        "translation": "замок",
+        "example": "Many tourists visit the old castle in Edinburgh.",
+        "level": "A2",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "cat",
+        "translation": "кіт",
+        "example": "My cat loves to nap on the couch.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "catch",
+        "translation": "ловити, спіймати",
+        "example": "Can you catch the ball if I throw it?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "category",
+        "translation": "категорія, розряд",
+        "example": "These books are sorted into different categories.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "cause",
+        "translation": "причина, спричиняти",
+        "example": "Lack of sleep can cause many health problems.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cd",
+        "translation": "компакт-диск",
+        "example": "I found an old music CD in my collection.",
+        "level": "A2",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "ceiling",
+        "translation": "стеля",
+        "example": "The lamp hangs from the ceiling in the living room.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "celebrate",
+        "translation": "святкувати",
+        "example": "We will celebrate our anniversary next month.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "celebration",
+        "translation": "святкування, свято",
+        "example": "The town organized a big celebration for the festival.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "celebrity",
+        "translation": "знаменитість, зірка",
+        "example": "Many celebrities attended the film premiere.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cell",
+        "translation": "клітина, комірка",
+        "example": "Plants and animals are made of cells.",
+        "level": "B2",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "cent",
+        "translation": "цент",
+        "example": "A dollar is equal to one hundred cents.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "central",
+        "translation": "центральний",
+        "example": "The central office is located downtown.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "centre",
+        "translation": "центр",
+        "example": "The city centre is usually very busy on Saturdays.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "century",
+        "translation": "століття",
+        "example": "The 20th century saw many technological advancements.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "ceremony",
+        "translation": "церемонія",
+        "example": "The graduation ceremony will take place next week.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "certain",
+        "translation": "певний, впевнений",
+        "example": "Are you certain that's the correct answer?",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "certainly",
+        "translation": "звичайно, безумовно",
+        "example": "I will certainly help you if I have time.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "chain",
+        "translation": "ланцюг, мережа",
+        "example": "She wore a delicate silver chain around her neck.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "chair",
+        "translation": "стілець, крісло",
+        "example": "Please sit on the chair next to the table.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "chairman",
+        "translation": "голова (ради, комітету)",
+        "example": "The chairman called the meeting to order at 10 AM.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "challenge",
+        "translation": "виклик, складне завдання",
+        "example": "Learning a new skill can be a rewarding challenge.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "champion",
+        "translation": "чемпіон",
+        "example": "He became the boxing champion at a young age.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "chance",
+        "translation": "шанс, можливість",
+        "example": "I hope I get a chance to visit Paris someday.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "change",
+        "translation": "зміна, змінювати",
+        "example": "The weather can change very quickly in the mountains.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "channel",
+        "translation": "канал (ТВ, річки)",
+        "example": "What's on channel 7 tonight?",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "chapter",
+        "translation": "розділ (книги)",
+        "example": "I just finished reading the first chapter of this novel.",
+        "level": "A2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "character",
+        "translation": "персонаж, характер",
+        "example": "He has a very strong and determined character.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "characteristic",
+        "translation": "характеристика, характерна риса",
+        "example": "Patience is a key characteristic of a good teacher.",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "charge",
+        "translation": "заряджати, плата, звинувачення",
+        "example": "Don't forget to charge your phone before you leave.",
+        "level": "B1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "charity",
+        "translation": "благодійність",
+        "example": "They decided to donate money to a children's charity.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "chart",
+        "translation": "діаграма, графік",
+        "example": "The sales chart shows a clear increase in profit.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "chat",
+        "translation": "розмовляти, балакати",
+        "example": "We had a long chat about our summer plans.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cheap",
+        "translation": "дешевий",
+        "example": "This store sells good quality clothes at a cheap price.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cheat",
+        "translation": "обманювати, шахраювати",
+        "example": "It's important not to cheat during an exam.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "check",
+        "translation": "перевіряти, чек",
+        "example": "Please check your email for new messages.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cheerful",
+        "translation": "веселий, життєрадісний",
+        "example": "Her cheerful attitude makes everyone feel better.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "cheese",
+        "translation": "сир",
+        "example": "Would you like some cheese on your sandwich?",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "chef",
+        "translation": "шеф-кухар",
+        "example": "The chef prepared a delicious five-course meal.",
+        "level": "A2",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "chemical",
+        "translation": "хімічний, хімікат",
+        "example": "This factory produces various chemicals.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "chemistry",
+        "translation": "хімія",
+        "example": "She is studying chemistry at university.",
+        "level": "A2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "chest",
+        "translation": "груди, скриня",
+        "example": "He felt a sharp pain in his chest.",
+        "level": "A1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "chicken",
+        "translation": "курка, курча",
+        "example": "We had roasted chicken for dinner.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "chief",
+        "translation": "головний, шеф",
+        "example": "She is the chief financial officer.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "child",
+        "translation": "дитина",
+        "example": "The child was playing happily in the garden.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "childhood",
+        "translation": "дитинство",
+        "example": "He often talks about his happy childhood memories.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "chip",
+        "translation": "чіп, чіпси",
+        "example": "Would you like some potato chips with your sandwich?",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "chocolate",
+        "translation": "шоколад",
+        "example": "I always keep a bar of chocolate in my bag.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "choice",
+        "translation": "вибір",
+        "example": "You have a difficult choice to make.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "choose",
+        "translation": "обирати, вибирати",
+        "example": "Which color do you choose for the new car?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "church",
+        "translation": "церква",
+        "example": "The old church stands on top of the hill.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cigarette",
+        "translation": "цигарка",
+        "example": "Smoking a cigarette is bad for your health.",
+        "level": "A2",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "cinema",
+        "translation": "кінотеатр",
+        "example": "Let's go to the cinema to watch the new movie.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "circle",
+        "translation": "коло",
+        "example": "Draw a perfect circle on the whiteboard.",
+        "level": "A1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "circumstance",
+        "translation": "обставина",
+        "example": "Under no circumstances should you open that package.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cite",
+        "translation": "цитувати, посилатися",
+        "example": "Remember to cite all your sources in your research paper.",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "citizen",
+        "translation": "громадянин",
+        "example": "Every citizen has the right to vote in elections.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "city",
+        "translation": "місто",
+        "example": "London is a bustling global city.",
+        "level": "A1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "civil",
+        "translation": "цивільний",
+        "example": "He is studying civil law at the university.",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "claim",
+        "translation": "заявляти, вимагати, претензія",
+        "example": "The company made a claim that their product is the best.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "class",
+        "translation": "клас, заняття, урок",
+        "example": "I have an English class every Monday morning.",
+        "level": "A1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "classic",
+        "translation": "класичний, класика",
+        "example": "This novel is considered a classic of modern literature.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "classical",
+        "translation": "класичний",
+        "example": "She prefers listening to classical music over pop.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "classroom",
+        "translation": "класна кімната",
+        "example": "The teacher decorated the classroom with colorful posters.",
+        "level": "A1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "clause",
+        "translation": "речення (грам.), пункт (догов.)",
+        "example": "The contract includes a special clause about early termination.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "clean",
+        "translation": "чистий, чистити",
+        "example": "Please clean your room before your guests arrive.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "clear",
+        "translation": "чистий, ясний, зрозумілий",
+        "example": "The sky is clear and blue today.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "clearly",
+        "translation": "чітко, ясно, зрозуміло",
+        "example": "He explained the instructions clearly to everyone.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "clever",
+        "translation": "розумний, кмітливий",
+        "example": "She is a very clever student and learns quickly.",
+        "level": "A2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "click",
+        "translation": "клацати, клік",
+        "example": "Click on this link to open the webpage.",
+        "level": "A2",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "client",
+        "translation": "клієнт",
+        "example": "Our company values every client equally.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "climate",
+        "translation": "клімат",
+        "example": "The climate in this region is usually mild and sunny.",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "climb",
+        "translation": "лізти, підійматися",
+        "example": "They decided to climb to the top of the mountain.",
+        "level": "A2",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "clock",
+        "translation": "годинник",
+        "example": "The old clock on the wall stopped working.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "close",
+        "translation": "зачиняти, закривати",
+        "example": "Please close the window before you leave.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "closed",
+        "translation": "зачинений, закритий",
+        "example": "The shop is closed on public holidays.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "closely",
+        "translation": "уважно, тісно",
+        "example": "Watch the children closely while they play near the water.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cloth",
+        "translation": "тканина, ганчірка",
+        "example": "She used a damp cloth to wipe the table.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "clothes",
+        "translation": "одяг",
+        "example": "I need to buy some new clothes for the winter.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "clothing",
+        "translation": "одяг",
+        "example": "She bought some new clothing for her trip.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cloud",
+        "translation": "хмара",
+        "example": "The sky is full of white clouds today.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "club",
+        "translation": "клуб",
+        "example": "I joined a book club last month.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "clue",
+        "translation": "підказка, ключ до розгадки",
+        "example": "The police found a new clue in the mystery.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "coach",
+        "translation": "тренер; автобус",
+        "example": "Our football coach is very strict.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "coal",
+        "translation": "вугілля",
+        "example": "Many homes used coal for heating in the past.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "coast",
+        "translation": "узбережжя",
+        "example": "We spent our holiday on the beautiful coast.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "coat",
+        "translation": "пальто",
+        "example": "It's cold outside, wear your warm coat.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "code",
+        "translation": "код",
+        "example": "He wrote a new code for the software application.",
+        "level": "B1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "coffee",
+        "translation": "кава",
+        "example": "Would you like a cup of coffee?",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "coin",
+        "translation": "монета",
+        "example": "I found an old coin on the street.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cold",
+        "translation": "холодний; застуда",
+        "example": "The water in the lake is very cold.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "collapse",
+        "translation": "обвалитися, зазнати краху",
+        "example": "The old building started to collapse after the earthquake.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "colleague",
+        "translation": "колега",
+        "example": "My colleague helped me with the project.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "collect",
+        "translation": "збирати",
+        "example": "She likes to collect stamps from different countries.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "collection",
+        "translation": "колекція, збірка",
+        "example": "He has an impressive collection of vintage cars.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "college",
+        "translation": "коледж",
+        "example": "After high school, I plan to go to college.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "colour",
+        "translation": "колір",
+        "example": "What is your favourite colour?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "coloured",
+        "translation": "кольоровий",
+        "example": "She likes to draw with coloured pencils.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "column",
+        "translation": "колона; стовпець",
+        "example": "The ancient temple has many stone columns.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "combination",
+        "translation": "комбінація, поєднання",
+        "example": "The new dish is a unique combination of flavors.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "combine",
+        "translation": "комбінувати, поєднувати",
+        "example": "You can combine these two ingredients to make a tasty sauce.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "come",
+        "translation": "приходити",
+        "example": "Can you come to my party next Saturday?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "comedy",
+        "translation": "комедія",
+        "example": "We watched a funny comedy film last night.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "comfort",
+        "translation": "комфорт; втішати",
+        "example": "The soft bed offered great comfort after a long day.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "comfortable",
+        "translation": "комфортний",
+        "example": "This chair is very comfortable to sit in.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "command",
+        "translation": "команда; наказувати",
+        "example": "The general gave a command to his soldiers.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "comment",
+        "translation": "коментар; коментувати",
+        "example": "I left a comment on her blog post.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "commercial",
+        "translation": "комерційний; реклама",
+        "example": "The company launched a new commercial for its product.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "commission",
+        "translation": "комісія",
+        "example": "She earns a commission on every sale she makes.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "commit",
+        "translation": "вчинити; зобов'язатися",
+        "example": "He decided to commit to a healthier lifestyle.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "commitment",
+        "translation": "зобов'язання",
+        "example": "Marriage requires a strong commitment from both partners.",
+        "level": "C1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "committee",
+        "translation": "комітет",
+        "example": "The committee met to discuss the new regulations.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "common",
+        "translation": "спільний, поширений",
+        "example": "It's common for children to ask a lot of questions.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "commonly",
+        "translation": "зазвичай, поширено",
+        "example": "This type of bird is commonly found in tropical regions.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "communicate",
+        "translation": "спілкуватися",
+        "example": "It's important to communicate clearly with your team.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "communication",
+        "translation": "спілкування, зв'язок",
+        "example": "Good communication is key to a successful relationship.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "community",
+        "translation": "спільнота",
+        "example": "The local community supported the new park project.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "company",
+        "translation": "компанія (фірма, товариство)",
+        "example": "He works for a large technology company.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "compare",
+        "translation": "порівнювати",
+        "example": "You should compare prices before buying a new phone.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "comparison",
+        "translation": "порівняння",
+        "example": "A comparison of the two reports showed different results.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "compete",
+        "translation": "змагатися",
+        "example": "Athletes from many countries compete in the Olympic Games.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "competition",
+        "translation": "змагання, конкуренція",
+        "example": "There is strong competition among smartphone manufacturers.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "competitive",
+        "translation": "конкурентний, змагальний",
+        "example": "The market for software is very competitive.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "competitor",
+        "translation": "конкурент, учасник змагань",
+        "example": "Our main competitor just released a new product.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "complain",
+        "translation": "скаржитися",
+        "example": "Many customers complained about the slow service.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "complaint",
+        "translation": "скарга",
+        "example": "I need to make a complaint about the food.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "complete",
+        "translation": "завершити, повний",
+        "example": "Please complete the form by Friday.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "completely",
+        "translation": "повністю, цілком",
+        "example": "I completely forgot about our appointment.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "complex",
+        "translation": "складний, комплексний",
+        "example": "The problem is more complex than it first appeared.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "complicated",
+        "translation": "ускладнений",
+        "example": "The instructions were too complicated for me.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "component",
+        "translation": "компонент, складова частина",
+        "example": "Each component of the machine needs to be checked.",
+        "level": "B2",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "computer",
+        "translation": "комп'ютер",
+        "example": "My new computer is very fast.",
+        "level": "A1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "concentrate",
+        "translation": "зосереджуватися",
+        "example": "It's hard to concentrate with all this noise.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "concentration",
+        "translation": "концентрація, зосередження",
+        "example": "Good concentration is important for studying.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "concept",
+        "translation": "концепція, поняття",
+        "example": "It's a difficult concept to grasp.",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "concern",
+        "translation": "занепокоєння, стосуватися",
+        "example": "My main concern is your safety.",
+        "level": "B2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "concerned",
+        "translation": "занепокоєний, стурбований",
+        "example": "Parents are concerned about the new school policy.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "concert",
+        "translation": "концерт",
+        "example": "We went to a rock concert last night.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "conclude",
+        "translation": "робити висновок, завершувати",
+        "example": "The meeting concluded with a vote.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "conclusion",
+        "translation": "висновок",
+        "example": "The report drew an interesting conclusion.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "condition",
+        "translation": "умова, стан",
+        "example": "The car is in good condition.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "conduct",
+        "translation": "проводити (дослідження, експеримент), поведінка",
+        "example": "They conducted a survey of customer satisfaction.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "conference",
+        "translation": "конференція",
+        "example": "She's attending a conference in Paris next week.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "confidence",
+        "translation": "впевненість, довіра",
+        "example": "He spoke with great confidence.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "confident",
+        "translation": "впевнений",
+        "example": "I am confident that we will succeed.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "confirm",
+        "translation": "підтверджувати",
+        "example": "Can you confirm your reservation?",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "conflict",
+        "translation": "конфлікт, суперечка",
+        "example": "There was a conflict between the two departments.",
+        "level": "B2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "confuse",
+        "translation": "плутати, бентежити",
+        "example": "The instructions confused me.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "confused",
+        "translation": "збентежений, розгублений",
+        "example": "I'm a bit confused by your question.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "confusing",
+        "translation": "заплутаний, бентежний",
+        "example": "The map was very confusing.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "connect",
+        "translation": "з'єднувати",
+        "example": "Can you connect this cable to the TV?",
+        "level": "A2",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "connected",
+        "translation": "підключений, пов'язаний",
+        "example": "The devices are connected wirelessly.",
+        "level": "B1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "connection",
+        "translation": "зв'язок, підключення",
+        "example": "The internet connection is very slow.",
+        "level": "B1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "conscious",
+        "translation": "свідомий, при свідомості",
+        "example": "She was conscious of his gaze.",
+        "level": "B2",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "consequence",
+        "translation": "наслідок",
+        "example": "The consequences of his actions were severe.",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "conservative",
+        "translation": "консервативний",
+        "example": "My grandparents are quite conservative in their views.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "consider",
+        "translation": "розглядати, враховувати",
+        "example": "We need to consider all options.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "consideration",
+        "translation": "розгляд, увага",
+        "example": "Your proposal is under consideration.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "consist",
+        "translation": "складатися (з)",
+        "example": "The team consists of five members.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "consistent",
+        "translation": "послідовний, узгоджений, стабільний",
+        "example": "Her performance has been consistently good.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "constant",
+        "translation": "постійний, незмінний",
+        "example": "The constant noise was very annoying.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "constantly",
+        "translation": "постійно, безперервно",
+        "example": "He is constantly checking his phone.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "construct",
+        "translation": "будувати, споруджувати, створювати",
+        "example": "They plan to construct a new bridge.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "construction",
+        "translation": "будівництво, споруда",
+        "example": "The building is still under construction.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "consume",
+        "translation": "споживати, поглинати",
+        "example": "We consume a lot of energy daily.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "consumer",
+        "translation": "споживач",
+        "example": "The consumer wants good quality products.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "contact",
+        "translation": "контакт, зв'язок; контактувати, зв'язуватися",
+        "example": "Please contact me if you have any questions.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "contain",
+        "translation": "містити, вміщувати",
+        "example": "This box contains old photos.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "container",
+        "translation": "контейнер, ємність",
+        "example": "Put the leftovers in a plastic container.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "contemporary",
+        "translation": "сучасний, сучасник",
+        "example": "She is a contemporary artist.",
+        "level": "C1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "content",
+        "translation": "зміст, вміст",
+        "example": "The book's content was very informative.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "contest",
+        "translation": "конкурс, змагання",
+        "example": "She won first prize in the singing contest.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "context",
+        "translation": "контекст",
+        "example": "You need to understand the historical context.",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "continent",
+        "translation": "континент, материк",
+        "example": "Africa is a vast continent.",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "continue",
+        "translation": "продовжувати",
+        "example": "Please continue reading from where you left off.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "continuous",
+        "translation": "безперервний, тривалий",
+        "example": "The machine makes a continuous humming sound.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "contract",
+        "translation": "контракт, договір",
+        "example": "He signed a new work contract.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "contrast",
+        "translation": "контраст, протилежність; контрастувати",
+        "example": "The black and white colors contrast sharply.",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "contribute",
+        "translation": "робити внесок, сприяти",
+        "example": "Everyone should contribute to the discussion.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "contribution",
+        "translation": "внесок",
+        "example": "Her contribution to the project was significant.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "control",
+        "translation": "контроль; контролювати, керувати",
+        "example": "He lost control of the car.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "convenient",
+        "translation": "зручний",
+        "example": "Is 3 PM a convenient time for you?",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "conversation",
+        "translation": "розмова",
+        "example": "We had a long conversation about our plans.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "convert",
+        "translation": "перетворювати, конвертувати",
+        "example": "They want to convert the old factory into apartments.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "convince",
+        "translation": "переконувати",
+        "example": "I tried to convince him to join us.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "convinced",
+        "translation": "переконаний",
+        "example": "I'm convinced that he is right.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cook",
+        "translation": "готувати; кухар",
+        "example": "My mother loves to cook delicious meals.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "cooker",
+        "translation": "кухонна плита, мультиварка",
+        "example": "The new electric cooker works very well.",
+        "level": "A2",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "cooking",
+        "translation": "приготування їжі, кулінарія",
+        "example": "He enjoys cooking on weekends.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "cool",
+        "translation": "прохолодний; охолоджувати; крутий",
+        "example": "It's quite cool outside today.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "copy",
+        "translation": "копія; копіювати",
+        "example": "Can you make a copy of this document?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "core",
+        "translation": "ядро, серцевина, суть",
+        "example": "The core of the problem is a lack of communication.",
+        "level": "C1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "corner",
+        "translation": "кут",
+        "example": "The cat is sleeping in the corner of the room.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "corporate",
+        "translation": "корпоративний",
+        "example": "She works in corporate finance.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "correct",
+        "translation": "правильний; виправляти",
+        "example": "Your answer is correct.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "correctly",
+        "translation": "правильно, вірно",
+        "example": "He spelled the word correctly.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cost",
+        "translation": "вартість, ціна; коштувати",
+        "example": "How much does this jacket cost?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "costume",
+        "translation": "костюм (сценічний, карнавальний), вбрання",
+        "example": "She wore a beautiful butterfly costume for the party.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cottage",
+        "translation": "котедж, сільський будинок",
+        "example": "They rented a small cottage by the lake for their vacation.",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "cotton",
+        "translation": "бавовна",
+        "example": "This shirt is made of pure cotton.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "could",
+        "translation": "міг би, міг (минулий час від can)",
+        "example": "I could swim when I was five.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "council",
+        "translation": "рада",
+        "example": "The city council meets once a month.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "count",
+        "translation": "рахувати; граф (титул)",
+        "example": "Please count how many people are in the room.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "country",
+        "translation": "країна; сільська місцевість",
+        "example": "Which country are you from?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "countryside",
+        "translation": "сільська місцевість",
+        "example": "We spent the weekend in the peaceful countryside.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "county",
+        "translation": "округ, графство",
+        "example": "She lives in the next county over.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "couple",
+        "translation": "пара; кілька",
+        "example": "A young couple walked hand in hand.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "courage",
+        "translation": "мужність, сміливість",
+        "example": "It takes courage to speak in front of a large audience.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "course",
+        "translation": "курс (навчальний, напрямок); страва",
+        "example": "I'm taking an English language course.",
+        "level": "A2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "court",
+        "translation": "суд; корт (тенісний)",
+        "example": "The case will go to court next month.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "cousin",
+        "translation": "двоюрідний брат/сестра",
+        "example": "My cousin lives in Canada.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cover",
+        "translation": "накривати; обкладинка",
+        "example": "Please cover the food before you put it in the fridge.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "covered",
+        "translation": "накритий; охоплений",
+        "example": "The ground was covered with snow.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cow",
+        "translation": "корова",
+        "example": "Cows produce milk.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "crash",
+        "translation": "аварія; розбитися",
+        "example": "There was a car crash on the highway.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "crazy",
+        "translation": "божевільний; шалений",
+        "example": "Don't be crazy, that's a bad idea.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "cream",
+        "translation": "вершки; крем",
+        "example": "Would you like cream in your coffee?",
+        "level": "A2",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "create",
+        "translation": "створювати",
+        "example": "She loves to create beautiful artwork.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "creation",
+        "translation": "створення; творіння",
+        "example": "The sculpture was an impressive creation.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "creative",
+        "translation": "творчий",
+        "example": "She has a very creative mind.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "creature",
+        "translation": "створіння, істота",
+        "example": "A strange creature lives in the forest.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "credit",
+        "translation": "кредит; заслуга",
+        "example": "I bought the car on credit.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "crew",
+        "translation": "екіпаж; команда",
+        "example": "The film crew worked tirelessly.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "crime",
+        "translation": "злочин",
+        "example": "The police are investigating the crime.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "criminal",
+        "translation": "злочинець; злочинний",
+        "example": "The criminal was caught by the police.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "crisis",
+        "translation": "криза",
+        "example": "The company is facing a financial crisis.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "criterion",
+        "translation": "критерій",
+        "example": "What are the main criteria for selection?",
+        "level": "C1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "critic",
+        "translation": "критик",
+        "example": "He is a respected film critic.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "critical",
+        "translation": "критичний; вирішальний",
+        "example": "It's critical that we act immediately.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "criticism",
+        "translation": "критика",
+        "example": "He received a lot of criticism for his actions.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "criticize",
+        "translation": "критикувати",
+        "example": "It's easy to criticize others.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "crop",
+        "translation": "урожай; обрізати (фото)",
+        "example": "The wheat crop was very good this year.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cross",
+        "translation": "перетинати; хрест",
+        "example": "Be careful when you cross the road.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "crowd",
+        "translation": "натовп",
+        "example": "A large crowd gathered in the square.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "crowded",
+        "translation": "переповнений",
+        "example": "The train was very crowded during rush hour.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "crucial",
+        "translation": "вирішальний, ключовий",
+        "example": "This is a crucial step in the process.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "cruel",
+        "translation": "жорстокий",
+        "example": "It was cruel to leave the dog outside in the cold.",
+        "level": "B2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "cry",
+        "translation": "плакати; кричати",
+        "example": "The baby started to cry.",
+        "level": "A1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "cultural",
+        "translation": "культурний",
+        "example": "The city offers many cultural attractions.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "culture",
+        "translation": "культура",
+        "example": "Learning about different cultures is fascinating.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cup",
+        "translation": "чашка, кухоль",
+        "example": "Please pour me a cup of tea.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "cupboard",
+        "translation": "шафа, буфет",
+        "example": "The dishes are in the kitchen cupboard.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cure",
+        "translation": "лікування, ліки; виліковувати",
+        "example": "Scientists are searching for a cure for cancer.",
+        "level": "B1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "curly",
+        "translation": "кучерявий",
+        "example": "She has beautiful curly hair.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "currency",
+        "translation": "валюта",
+        "example": "What is the local currency in Japan?",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "current",
+        "translation": "поточний, сучасний; течія",
+        "example": "What's your current address?",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "currently",
+        "translation": "наразі, зараз",
+        "example": "He is currently working on a new project.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "curtain",
+        "translation": "штора, завіса",
+        "example": "Please close the curtains, it's too bright.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "curve",
+        "translation": "крива, вигин",
+        "example": "The road has a sharp curve ahead.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "curved",
+        "translation": "вигнутий",
+        "example": "The artist designed a table with curved legs.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "custom",
+        "translation": "звичай, традиція",
+        "example": "It's a local custom to exchange gifts on New Year's.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "customer",
+        "translation": "клієнт, покупець",
+        "example": "The customer bought a new phone.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "cut",
+        "translation": "різати, поріз",
+        "example": "Be careful not to cut your finger.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "cycle",
+        "translation": "цикл, кругообіг; їздити на велосипеді",
+        "example": "The water cycle is essential for life.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dad",
+        "translation": "тато",
+        "example": "My dad helps me with my homework.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "daily",
+        "translation": "щоденний, щодня",
+        "example": "I read the news daily.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "damage",
+        "translation": "пошкодження, шкода; пошкоджувати",
+        "example": "The storm caused a lot of damage to the houses.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dance",
+        "translation": "танцювати, танець",
+        "example": "Let's dance all night!",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dancer",
+        "translation": "танцюрист, танцівниця",
+        "example": "She is a professional ballet dancer.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dancing",
+        "translation": "танці (процес)",
+        "example": "We enjoy dancing to pop music.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "danger",
+        "translation": "небезпека",
+        "example": "Smoking is a danger to your health.",
+        "level": "B1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "dangerous",
+        "translation": "небезпечний",
+        "example": "It's dangerous to swim alone in the ocean.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dark",
+        "translation": "темний, темрява",
+        "example": "It gets dark early in winter.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "data",
+        "translation": "дані",
+        "example": "We need to analyze the sales data.",
+        "level": "B1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "date",
+        "translation": "дата; побачення; фінік",
+        "example": "What's today's date?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "daughter",
+        "translation": "дочка",
+        "example": "My daughter is studying at university.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "day",
+        "translation": "день",
+        "example": "Have a good day!",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dead",
+        "translation": "мертвий",
+        "example": "The plant is dead because I forgot to water it.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "deal",
+        "translation": "угода, справа; мати справу",
+        "example": "We closed a good deal with the new supplier.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "dear",
+        "translation": "дорогий, люба/любий",
+        "example": "Dear John, how are you?",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "death",
+        "translation": "смерть",
+        "example": "The book explores themes of life and death.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "debate",
+        "translation": "дебати, дискусія; дебатувати",
+        "example": "There was a lively debate about the new policy.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "debt",
+        "translation": "борг",
+        "example": "He is trying to pay off his debts.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "decade",
+        "translation": "десятиліття",
+        "example": "The company has been successful for a decade.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "december",
+        "translation": "грудень",
+        "example": "Christmas is in December.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "decent",
+        "translation": "порядний, пристойний",
+        "example": "He's a decent person, always fair.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "decide",
+        "translation": "вирішувати",
+        "example": "I can't decide what to eat for dinner.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "decision",
+        "translation": "рішення",
+        "example": "Making important decisions can be difficult.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "declare",
+        "translation": "оголошувати, заявляти",
+        "example": "The company will declare its quarterly earnings next week.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "decline",
+        "translation": "відхиляти, занепадати, знижуватися",
+        "example": "His health began to decline rapidly.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "decorate",
+        "translation": "прикрашати, декорувати",
+        "example": "They decorated the room for the party.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "decoration",
+        "translation": "прикраса, декор",
+        "example": "The Christmas decorations are beautiful.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "decrease",
+        "translation": "зменшувати, знижувати(ся)",
+        "example": "The number of students has decreased this year.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "deep",
+        "translation": "глибокий",
+        "example": "The lake is very deep.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "deeply",
+        "translation": "глибоко",
+        "example": "She was deeply moved by the story.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "defeat",
+        "translation": "поразка (n), перемогти (v)",
+        "example": "The team suffered a bitter defeat.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "defence",
+        "translation": "захист, оборона",
+        "example": "The country's defence system is strong.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "defend",
+        "translation": "захищати, обороняти",
+        "example": "They had to defend their home.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "define",
+        "translation": "визначати, давати визначення",
+        "example": "Can you define this term for me?",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "definite",
+        "translation": "певний, чіткий, визначений",
+        "example": "We need a definite answer by tomorrow.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "definitely",
+        "translation": "безперечно, точно, безумовно",
+        "example": "I will definitely be there.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "definition",
+        "translation": "визначення",
+        "example": "Look up the definition of the word.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "degree",
+        "translation": "ступінь (звання, міра, градус)",
+        "example": "She has a degree in history.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "delay",
+        "translation": "затримка (n), затримувати(ся) (v)",
+        "example": "There was a delay due to heavy traffic.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "deliberate",
+        "translation": "навмисний, обдуманий",
+        "example": "It was a deliberate act, not an accident.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "deliberately",
+        "translation": "навмисно, свідомо",
+        "example": "He deliberately ignored her question.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "delicious",
+        "translation": "смачний",
+        "example": "This cake is absolutely delicious!",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "delight",
+        "translation": "насолода (n), захоплювати (v)",
+        "example": "The concert was a pure delight.",
+        "level": "B2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "delighted",
+        "translation": "в захваті, дуже радий",
+        "example": "I was delighted to hear your news.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "deliver",
+        "translation": "доставляти, передавати (промову)",
+        "example": "The postman delivers mail every day.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "delivery",
+        "translation": "доставка",
+        "example": "We're waiting for a package delivery.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "demand",
+        "translation": "вимагати (v), попит, вимога (n)",
+        "example": "The workers demanded better pay.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "demonstrate",
+        "translation": "демонструвати, показувати, доводити",
+        "example": "He demonstrated how to use the new software.",
+        "level": "B2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "dentist",
+        "translation": "стоматолог",
+        "example": "I have an appointment with the dentist tomorrow.",
+        "level": "A1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "deny",
+        "translation": "заперечувати, відмовляти",
+        "example": "She denied stealing the money.",
+        "level": "B2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "department",
+        "translation": "відділ, департамент",
+        "example": "He works in the marketing department.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "departure",
+        "translation": "відправлення, виліт",
+        "example": "Our departure was delayed by two hours.",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "depend",
+        "translation": "залежати",
+        "example": "It depends on the weather.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "depressed",
+        "translation": "пригнічений, депресивний",
+        "example": "She felt depressed after losing her job.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "depressing",
+        "translation": "гнітючий, депресивний",
+        "example": "The news was very depressing.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "depth",
+        "translation": "глибина",
+        "example": "The depth of the ocean is immense.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "describe",
+        "translation": "описувати",
+        "example": "Can you describe the suspect?",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "description",
+        "translation": "опис",
+        "example": "The book has a vivid description of the landscape.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "desert",
+        "translation": "пустеля (n), покидати, дезертувати (v)",
+        "example": "The Sahara is a vast desert.",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "deserve",
+        "translation": "заслуговувати",
+        "example": "You deserve a break after all that hard work.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "design",
+        "translation": "дизайн, проектувати (v), розробляти (v)",
+        "example": "She designed a beautiful dress.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "designer",
+        "translation": "дизайнер",
+        "example": "My sister is a fashion designer.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "desire",
+        "translation": "бажання (n), бажати (v)",
+        "example": "He expressed a strong desire to travel.",
+        "level": "B2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "desk",
+        "translation": "стіл (робочий)",
+        "example": "Please put the books on my desk.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "desperate",
+        "translation": "відчайдушний, безнадійний",
+        "example": "He was desperate for a job.",
+        "level": "B2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "despite",
+        "translation": "незважаючи на",
+        "example": "Despite the rain, we went for a walk.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "destination",
+        "translation": "пункт призначення, мета",
+        "example": "Our destination was a small village in the mountains.",
+        "level": "B1",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "destroy",
+        "translation": "руйнувати, знищувати",
+        "example": "The storm destroyed several houses.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "detail",
+        "translation": "деталь, подробиця",
+        "example": "Please give me all the details.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "detailed",
+        "translation": "детальний, докладний",
+        "example": "She gave a detailed explanation.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "detect",
+        "translation": "виявляти, знаходити",
+        "example": "The new sensor can detect very small changes.",
+        "level": "B2",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "detective",
+        "translation": "детектив",
+        "example": "The detective solved the mystery.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "determine",
+        "translation": "визначати, встановлювати",
+        "example": "We need to determine the cause of the problem.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "determined",
+        "translation": "рішучий, цілеспрямований",
+        "example": "She was determined to succeed.",
+        "level": "B2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "develop",
+        "translation": "розвивати, розробляти",
+        "example": "We need to develop new skills.",
+        "level": "A2",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "development",
+        "translation": "розвиток, розробка",
+        "example": "The company is focused on product development.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "device",
+        "translation": "пристрій, апарат",
+        "example": "He uses a small electronic device.",
+        "level": "B1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "diagram",
+        "translation": "діаграма, схема",
+        "example": "The book included a clear diagram.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "dialogue",
+        "translation": "діалог, розмова",
+        "example": "The dialogue in the film was excellent.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "diamond",
+        "translation": "діамант",
+        "example": "She wore a beautiful diamond ring.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "diary",
+        "translation": "щоденник",
+        "example": "She writes in her diary every night.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dictionary",
+        "translation": "словник",
+        "example": "I looked up the word in the dictionary.",
+        "level": "A1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "die",
+        "translation": "помирати",
+        "example": "Many people die of old age.",
+        "level": "A2",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "diet",
+        "translation": "дієта, раціон",
+        "example": "I'm trying to eat a healthy diet.",
+        "level": "A2",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "difference",
+        "translation": "відмінність, різниця",
+        "example": "What's the difference between these two?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "different",
+        "translation": "різний, інший",
+        "example": "These two cars are very different.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "differently",
+        "translation": "по-іншому, інакше",
+        "example": "He thinks about things differently.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "difficult",
+        "translation": "важкий, складний",
+        "example": "The exam was very difficult.",
+        "level": "A1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "difficulty",
+        "translation": "труднощі, складність",
+        "example": "I had some difficulty understanding him.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dig",
+        "translation": "копати",
+        "example": "They dug a hole in the garden.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "digital",
+        "translation": "цифровий",
+        "example": "We live in a digital age.",
+        "level": "B1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "dinner",
+        "translation": "вечеря",
+        "example": "What's for dinner tonight?",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "direct",
+        "translation": "прямий, безпосередній; керувати",
+        "example": "He gave direct instructions.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "direction",
+        "translation": "напрямок",
+        "example": "Which direction should we go?",
+        "level": "A2",
+        "category": "Подорожі"
+    },
+    {
+        "english_word": "directly",
+        "translation": "прямо, безпосередньо",
+        "example": "Please come directly to my office.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "director",
+        "translation": "директор, режисер",
+        "example": "The film director won an award.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "dirt",
+        "translation": "бруд",
+        "example": "There was dirt on his shoes.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dirty",
+        "translation": "брудний",
+        "example": "The car was very dirty.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "disadvantage",
+        "translation": "недолік, незручність",
+        "example": "One disadvantage is the high cost.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "disagree",
+        "translation": "не погоджуватися",
+        "example": "I disagree with your opinion.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "disappear",
+        "translation": "зникати",
+        "example": "The magician made the rabbit disappear.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "disappointed",
+        "translation": "розчарований",
+        "example": "I was disappointed with the results.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "disappointing",
+        "translation": "розчаровуючий",
+        "example": "The movie was very disappointing.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "disaster",
+        "translation": "катастрофа, лихо",
+        "example": "The earthquake was a terrible disaster.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "disc",
+        "translation": "диск",
+        "example": "He threw the frisbee disc across the park.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "discipline",
+        "translation": "дисципліна",
+        "example": "Self-discipline is crucial for success.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "discount",
+        "translation": "знижка",
+        "example": "They offered a 10% discount on all items.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "discover",
+        "translation": "відкривати, виявляти",
+        "example": "Scientists hope to discover new planets.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "discovery",
+        "translation": "відкриття, виявлення",
+        "example": "The discovery of penicillin changed medicine.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "discuss",
+        "translation": "обговорювати",
+        "example": "Let's discuss this problem later.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "discussion",
+        "translation": "обговорення",
+        "example": "We had a long discussion about the project.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "disease",
+        "translation": "хвороба",
+        "example": "Many diseases are preventable.",
+        "level": "B1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "dish",
+        "translation": "тарілка; страва",
+        "example": "This is a delicious vegetarian dish.",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "dishonest",
+        "translation": "нечесний",
+        "example": "It's dishonest to cheat on a test.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "dislike",
+        "translation": "не любити, не подобатись; антипатія",
+        "example": "I dislike very cold weather.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "dismiss",
+        "translation": "звільняти; відхиляти",
+        "example": "The manager decided to dismiss the employee for misconduct.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "display",
+        "translation": "показувати, демонструвати; дисплей",
+        "example": "The museum has a new art display.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "distance",
+        "translation": "відстань",
+        "example": "What is the distance from here to the station?",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "distribute",
+        "translation": "розповсюджувати, розподіляти",
+        "example": "They distribute newspapers every morning.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "distribution",
+        "translation": "розповсюдження, розподіл",
+        "example": "The distribution of aid was well-organized.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "district",
+        "translation": "район, округ",
+        "example": "This is a quiet residential district.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "divide",
+        "translation": "ділити, розділяти",
+        "example": "We need to divide the cake into equal parts.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "division",
+        "translation": "поділ, відділ",
+        "example": "The company has several divisions.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "divorced",
+        "translation": "розлучений",
+        "example": "My parents are divorced.",
+        "level": "A2",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "do",
+        "translation": "робити, виконувати",
+        "example": "What do you do for a living?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "doctor",
+        "translation": "лікар",
+        "example": "I need to see a doctor.",
+        "level": "A1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "document",
+        "translation": "документ; документувати",
+        "example": "Please sign this document.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "documentary",
+        "translation": "документальний фільм",
+        "example": "I watched an interesting documentary about nature.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dog",
+        "translation": "собака",
+        "example": "My dog loves to play fetch.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dollar",
+        "translation": "долар",
+        "example": "This book costs twenty dollars.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "domestic",
+        "translation": "домашній, внутрішній",
+        "example": "We have domestic animals on our farm.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dominate",
+        "translation": "домінувати, переважати",
+        "example": "The company dominates the market.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "donate",
+        "translation": "дарувати, пожертвувати",
+        "example": "Many people donate money to charity.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "door",
+        "translation": "двері",
+        "example": "Please close the door quietly.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "double",
+        "translation": "подвійний; подвоювати",
+        "example": "I ordered a double espresso.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "doubt",
+        "translation": "сумнів; сумніватися",
+        "example": "I have no doubt that she will succeed.",
+        "level": "B1",
+        "category": "Емоції та Відносини"
+    },
+    {
+        "english_word": "down",
+        "translation": "вниз",
+        "example": "Please sit down.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "download",
+        "translation": "завантажувати",
+        "example": "You can download the app from our website.",
+        "level": "A2",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "downstairs",
+        "translation": "внизу (по сходах)",
+        "example": "My office is downstairs.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "downwards",
+        "translation": "донизу, вниз",
+        "example": "The path led downwards into the valley.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dozen",
+        "translation": "дюжина",
+        "example": "I bought a dozen eggs.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "draft",
+        "translation": "чернетка; протяг",
+        "example": "Please send me the first draft of your essay.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "drag",
+        "translation": "тягнути, волочити",
+        "example": "He had to drag the heavy box across the floor.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "drama",
+        "translation": "драма",
+        "example": "We watched a historical drama last night.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dramatic",
+        "translation": "драматичний, різкий, ефектний",
+        "example": "The play had a dramatic ending.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "draw",
+        "translation": "малювати, тягнути, жеребкування",
+        "example": "Can you draw a cat?",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "drawing",
+        "translation": "малюнок, малювання",
+        "example": "She showed me her new drawing.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dream",
+        "translation": "мрія, сон, мріяти",
+        "example": "I had a strange dream last night.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dress",
+        "translation": "сукня, одягати",
+        "example": "She bought a beautiful new dress.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dressed",
+        "translation": "одягнений",
+        "example": "He was dressed in a suit.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "drink",
+        "translation": "пити, напій",
+        "example": "Would you like a drink?",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "drive",
+        "translation": "водити, їхати, поїздка",
+        "example": "I drive to work every day.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "driver",
+        "translation": "водій",
+        "example": "The bus driver was very friendly.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "driving",
+        "translation": "водіння",
+        "example": "Driving in the city can be stressful.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "drop",
+        "translation": "крапля, падати, кидати",
+        "example": "Be careful not to drop your phone.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "drug",
+        "translation": "ліки, наркотик",
+        "example": "The doctor prescribed a new drug for her condition.",
+        "level": "B1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "drum",
+        "translation": "барабан",
+        "example": "He plays the drums in a band.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "drunk",
+        "translation": "п'яний",
+        "example": "He was too drunk to drive.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dry",
+        "translation": "сухий, сушити",
+        "example": "Please hang the clothes out to dry.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "due",
+        "translation": "належний, через (певний час), завдяки",
+        "example": "The train is due to arrive at 3 PM.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "during",
+        "translation": "протягом, під час",
+        "example": "She fell asleep during the movie.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "dust",
+        "translation": "пил, витирати пил",
+        "example": "There was a lot of dust on the old furniture.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "duty",
+        "translation": "обов'язок, чергування",
+        "example": "It's your duty to report any problems.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "dvd",
+        "translation": "DVD",
+        "example": "Let's watch a movie on DVD tonight.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "each",
+        "translation": "кожен",
+        "example": "Each student received a certificate.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "ear",
+        "translation": "вухо",
+        "example": "He whispered something in her ear.",
+        "level": "A1",
+        "category": "Здоров'я та Тіло"
+    },
+    {
+        "english_word": "early",
+        "translation": "рано, ранній",
+        "example": "She woke up early this morning.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "earn",
+        "translation": "заробляти",
+        "example": "He works hard to earn a good salary.",
+        "level": "A2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "earth",
+        "translation": "земля (планета), ґрунт",
+        "example": "The Earth revolves around the sun.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "earthquake",
+        "translation": "землетрус",
+        "example": "There was a strong earthquake in the region.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "easily",
+        "translation": "легко",
+        "example": "She solved the puzzle easily.",
+        "level": "A2",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "east",
+        "translation": "схід",
+        "example": "The sun rises in the east.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "eastern",
+        "translation": "східний",
+        "example": "Many Eastern countries have rich cultural traditions.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "easy",
+        "translation": "легкий, простий",
+        "example": "This task is very easy.",
+        "level": "A1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "eat",
+        "translation": "їсти",
+        "example": "What do you want to eat for dinner?",
+        "level": "A1",
+        "category": "Їжа та Напої"
+    },
+    {
+        "english_word": "economic",
+        "translation": "економічний",
+        "example": "The country faces many economic challenges.",
+        "level": "B2",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "economy",
+        "translation": "економіка, ощадливість",
+        "example": "The global economy is recovering slowly.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "edge",
+        "translation": "край, межа",
+        "example": "Be careful not to fall off the edge of the cliff.",
+        "level": "B1",
+        "category": "Повсякдення"
+    },
+    {
+        "english_word": "edit",
+        "translation": "редагувати",
+        "example": "Please edit this document before sending it.",
+        "level": "B1",
+        "category": "IT та Технології"
+    },
+    {
+        "english_word": "edition",
+        "translation": "видання, випуск",
+        "example": "This is the first edition of the book.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "editor",
+        "translation": "редактор",
+        "example": "The editor approved the article for publication.",
+        "level": "B1",
+        "category": "Робота і Бізнес"
+    },
+    {
+        "english_word": "educate",
+        "translation": "навчати, виховувати",
+        "example": "It's important to educate children about healthy habits.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "educated",
+        "translation": "освічений",
+        "example": "She is a very educated woman.",
+        "level": "B1",
+        "category": "Освіта"
+    },
+    {
+        "english_word": "education",
+        "translation": "освіта",
+        "example": "Education is key to a better future.",
+        "level": "A2",
+        "category": "Освіта"
+    }
+]

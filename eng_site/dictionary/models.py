@@ -23,8 +23,8 @@ class Word(models.Model):
         ('C2', 'C2 (Вільне володіння)'),
     ]
 
-    english_word = models.CharField(max_length=150, verbose_name="Слово англійською")
-    translation = models.CharField(max_length=150, verbose_name='Переклад слова')
+    english_word = models.CharField(max_length=150, db_index=True, verbose_name="Слово англійською")
+    translation = models.CharField(max_length=150, db_index=True, verbose_name='Переклад слова')
     example = models.TextField(blank=True, null=True, verbose_name="Приклад використання")
     level = models.CharField(max_length=2, choices=LEVEL_CHOICES, default='A1', verbose_name="Рівень")
 

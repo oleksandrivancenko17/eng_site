@@ -22,28 +22,32 @@ class Command(BaseCommand):
             data = json.load(f)
 
         categories_added = 0
-        texts_added = 0
+        texts_to_create = []
+        category_cache = {c.name: c for c in BookCategory.objects.all()}
 
         for item in data:
 
-            category_obj, cat_created = BookCategory.objects.get_or_create(name=item['category'])
-            if cat_created:
+            cat_name = item['category']
+            if cat_name not in category_cache:
+                category_obj, _ = BookCategory.objects.get_or_create(name=cat_name)
+                category_cache[cat_name] = category_obj
                 categories_added += 1
 
-            text_obj, text_created = Article.objects.get_or_create(
+            category_obj = category_cache[cat_name]
+
+            texts_to_create.append(Article(
                 title=item['title'],
-                defaults={
-                    'description': item['description'],
-                    'content': item['content'],
-                    'level': item['level'],
-                    'category': category_obj
-                }
-            )
-            if text_created:
-                texts_added += 1
+                description=item['description'],
+                content=item['content'],
+                level=item['level'],
+                category_id=category_obj.id
+            ))
+
+        if texts_to_create:
+            created_texts = Article.objects.bulk_create(texts_to_create, batch_size=50 ,ignore_conflicts=True)
 
         self.stdout.write(self.style.SUCCESS(
-            f"Готово! Додано нових категорій: {categories_added}. Додано нових текстів: {texts_added}."
+            f"Готово! Додано нових категорій: {categories_added}. Додано нових текстів: {len(texts_to_create)}."
         ))
 
         self.stdout.write(self.style.SUCCESS("Завантаження успішно завершено!"))
