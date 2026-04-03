@@ -18,13 +18,17 @@ def load_words(filepath):
     return [w.strip() for w in words if w.strip()]
 
 
+
+
 MODELS_TO_TRY = [
-    'gemini-3.1-flash-lite-preview',
+    'gemini-3.1-flash-lite-preview',  # Спроба 1
+    'gemini-3.1-flash-lite-preview',  # Спроба 2 (якщо перша впала з 503)
+    'gemini-3.1-flash-lite-preview',  # Спроба 3 (якщо друга теж впала)
 
-    'gemini-3-flash-preview',
-    'gemini-2.5-flash-lite',
+    'gemini-3-flash-preview',  # Запасний варіант
+    'gemini-2.5-flash-lite',  # Запасний варіант
 
-    'gemma-3-27b-it'
+    'gemma-3-27b-it'  # Останній рубіж
 ]
 
 
@@ -71,6 +75,7 @@ def generate_json_for_batch(words_batch):
 
             elif '503' in error_msg or 'UNAVAILABLE' in error_msg:
                 print(f"⚠️ Модель {model_name} перевантажена (503). Перемикаємось...")
+                time.sleep(5)
                 continue
 
             else:
@@ -130,8 +135,6 @@ def main():
         if batch_result:
             all_results.extend(batch_result)
 
-        if batch_result:
-            all_results.extend(batch_result)
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(all_results, f, ensure_ascii=False, indent=4)
         else:

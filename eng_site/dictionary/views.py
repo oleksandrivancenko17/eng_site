@@ -1,5 +1,4 @@
 from django.db.models import Q
-from django.shortcuts import render
 from django.views.generic import ListView
 from dictionary.models import Category, Word
 from flashcards.models import UserWord
@@ -26,15 +25,13 @@ class DictionaryListView(ListView):
             )
 
         if level_query and level_query != 'all':
-            # startswith працює, але якщо рівень це точний збіг (напр. 'B1'), краще просто exact
-            queryset = queryset.filter(level=level_query)
+            queryset = queryset.filter(level__startswith=level_query)
 
         if category_query and category_query != 'all':
             queryset = queryset.filter(category_id=category_query)
 
         if self.request.user.is_authenticated:
             if learning_status and learning_status != 'all':
-                # ПЕРЕВІРКА: якщо related_name не вказано, заміни user_learning на userword
                 if learning_status == 'learning':
                     queryset = queryset.filter(user_learning__user=self.request.user)
                 elif learning_status == 'not_learning':

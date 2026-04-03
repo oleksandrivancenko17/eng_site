@@ -2,7 +2,6 @@ import json
 import os
 from django.core.management.base import BaseCommand
 from django.conf import settings
-from django.utils.lorem_ipsum import words
 
 from dictionary.models import Category, Word
 
@@ -13,7 +12,7 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         self.stdout.write("Починаємо завантаження...")
 
-        file_path = os.path.join(settings.BASE_DIR, 'words.json')
+        file_path = os.path.join(settings.BASE_DIR, 'words_final.json')
 
         if not os.path.exists(file_path):
             self.stdout.write(self.style.ERROR(f'Файл не знайдено: {file_path}'))
@@ -38,9 +37,9 @@ class Command(BaseCommand):
 
             words_to_create.append(Word(
                 english_word=item['english_word'],
-                translation=item['translation'],
-                example=item['example'],
-                level=item['level'],
+                translation=item.get('translation',''),
+                example=item.get('example',''),
+                level=item.get('level','A1'),
                 category_id=category_obj.id
             )
             )
