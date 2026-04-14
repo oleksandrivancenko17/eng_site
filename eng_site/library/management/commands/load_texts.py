@@ -12,7 +12,7 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         self.stdout.write("Починаємо завантаження...")
 
-        file_path = os.path.join(settings.BASE_DIR, 'texts.json')
+        file_path = os.path.join(settings.BASE_DIR, 'texts_final.json')
 
         if not os.path.exists(file_path):
             self.stdout.write(self.style.ERROR(f'Файл не знайдено: {file_path}'))
