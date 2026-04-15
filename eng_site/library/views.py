@@ -1,4 +1,6 @@
 import json
+from django.conf import settings
+from django.core.cache import cache
 
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -49,8 +51,14 @@ class ArticleListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+
+        categories = cache.get('library_categories')
+        if not categories:
+            categories = BookCategory.objects.all()
+            cache.set('library_categories', categories, settings.CACHE_TTL * 30)
+
         context['level_choices'] = Article.LEVEL_CHOICES
-        context['categories'] = BookCategory.objects.all()
+        context['categories'] = categories
 
         context['current_q'] = self.request.GET.get('q', '')
         context['current_levels'] = self.request.GET.getlist('level', '')
@@ -90,12 +98,18 @@ class ArticleDetailView(TemplateView):
 def translate_word(request):
     try:
         data = json.loads(request.body)
-        word = data.get('word', '').strip()
+        word = data.get('word', '').strip().lower()
 
         if not word:
             return JsonResponse({'error': 'Немає слова для перекладу'}, status=400)
 
-        translation = GoogleTranslator(source="en", target="uk").translate(word)
+        cache_key = f'translation_en_uk_{word}'
+        translation = cache.get(cache_key)
+
+        if not translation:
+            translation = GoogleTranslator(source='en', target='uk').translate(word)
+            cache.set(cache_key, translation, settings.CACHE_TTL * 30)
+
 
         return JsonResponse({
             'original_word': word,

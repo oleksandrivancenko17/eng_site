@@ -26,7 +26,7 @@ class Word(models.Model):
     english_word = models.CharField(max_length=150, db_index=True, verbose_name="Слово англійською")
     translation = models.CharField(max_length=150, db_index=True, verbose_name='Переклад слова')
     example = models.TextField(blank=True, null=True, verbose_name="Приклад використання")
-    level = models.CharField(max_length=2, choices=LEVEL_CHOICES, default='A1', verbose_name="Рівень")
+    level = models.CharField(max_length=2, choices=LEVEL_CHOICES, db_index=True, default='A1', verbose_name="Рівень")
 
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True, related_name='words',
                                  verbose_name="Категорія")

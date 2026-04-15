@@ -1,3 +1,6 @@
+from django.conf import settings
+from django.core.cache import cache
+
 from django.db.models import Q
 from django.views.generic import ListView
 from dictionary.models import Category, Word
@@ -41,7 +44,14 @@ class DictionaryListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['categories'] = Category.objects.all()
+
+        categories = cache.get('all_categories')
+
+        if not categories:
+            categories = list(Category.objects.all())
+            cache.set('all_categories', categories, settings.CACHE_TTL * 30)
+
+        context['categories'] = categories
 
         # ДОДАНО: Передаємо вибрані фільтри в шаблон, щоб форма не "скидалася"
         context['current_search'] = self.request.GET.get('q', '')
