@@ -146,3 +146,11 @@ else:
     }
 
 CACHE_TTL = 60 * 60 * 24
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Дозволяємо POST-запити (наприклад, логін) з цих доменів
+CSRF_TRUSTED_ORIGINS = [
+    'https://best-devs.studio',
+    'https://www.best-devs.studio',
+]
