@@ -1,4 +1,8 @@
 # EngLearn - Full-stack English Learning Platform 🇬🇧
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![Django](https://img.shields.io/badge/Django-5.x-green)
+![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 A production-ready web application for learning English, featuring grammar modules, vocabulary flashcards, and automated testing.
 
