@@ -4,6 +4,7 @@ from dictionary import views
 
 router = DefaultRouter()
 router.register(r'words', views.WordViewSet, basename='api-word')
+router.register(r'categories', views.CategoryViewSet, basename='api-category')
 
 
 app_name = 'dictionary'
