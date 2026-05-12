@@ -6,6 +6,18 @@ from django.views.generic import ListView
 from dictionary.models import Category, Word
 from flashcards.models import UserWord
 
+from rest_framework import viewsets, filters
+from .serializers import WordSerializer
+from django_filters.rest_framework import DjangoFilterBackend
+
+class WordViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Word.objects.select_related('category').all()
+    serializer_class = WordSerializer
+
+    filter_backends = (DjangoFilterBackend, filters.SearchFilter)
+    search_fields = ('english_word', 'translation')
+    filterset_fields = ('category', 'level')
+
 
 class DictionaryListView(ListView):
     model = Word
