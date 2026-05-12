@@ -21,9 +21,12 @@ class WordViewSet(viewsets.ReadOnlyModelViewSet):
 
 
 class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
+    """
+    API endpoint for viewing word categories.
+    """
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
-    paginate_by = None
+    pagination_class = None
 
 
 class DictionaryListView(ListView):

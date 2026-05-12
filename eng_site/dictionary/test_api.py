@@ -74,3 +74,34 @@ class TestDictionaryAPI:
         assert 'apple' in found_words
         assert 'application' in found_words
         assert 'server' not in found_words
+
+
+@pytest.mark.django_db
+class TestCategoryAPI:
+
+    def setup_method(self):
+        self.client = APIClient()
+        self.category_food = Category.objects.create(name="Food")
+        self.category_it = Category.objects.create(name="IT")
+
+    def test_get_categories_list_returns_200(self):
+        response = self.client.get('/dictionary/api/v1/categories/')
+
+        assert response.status_code == 200
+
+        data = response.json()
+        assert isinstance(data, list)
+        assert len(data) == 2
+        assert data[0]['name'] == 'Food'
+
+    def test_get_single_category_returns_200(self):
+        response = self.client.get(f'/dictionary/api/v1/categories/{self.category_food.id}/')
+
+        assert response.status_code == 200
+
+        data = response.json()
+        assert data['name'] == 'Food'
+
+    def test_get_non_existent_category_returns_404(self):
+        response = self.client.get('/dictionary/api/v1/categories/999/')
+        assert response.status_code == 404
