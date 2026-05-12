@@ -13,7 +13,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Завантажуємо змінні оточення з файлу .env
 load_dotenv()
 
-
 # Quick-start development settings - unsuitable for production
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('SECRET_KEY')
@@ -23,7 +22,6 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 allowed_hosts_env = os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost')
 ALLOWED_HOSTS = allowed_hosts_env.split(',')
-
 
 # Application definition
 INSTALLED_APPS = [
@@ -74,7 +72,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'eng_site.wsgi.application'
 
-
 # Database
 DATABASES = {
     'default': {
@@ -86,7 +83,6 @@ DATABASES = {
         'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
-
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -104,14 +100,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Europe/Kyiv'
 USE_TZ = True
 USE_I18N = True
-
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
@@ -128,7 +122,6 @@ AUTH_USER_MODEL = 'users.CustomUser'
 LOGIN_URL = 'users:login'
 LOGIN_REDIRECT_URL = 'core:dashboard'
 LOGOUT_REDIRECT_URL = 'users:login'
-
 
 # Caches
 redis_url = os.getenv('REDIS_URL')
@@ -149,9 +142,11 @@ else:
 
 CACHE_TTL = 60 * 60 * 24
 
-
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 15,
 }
 
 SPECTACULAR_SETTINGS = {
