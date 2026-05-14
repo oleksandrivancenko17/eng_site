@@ -12,3 +12,5 @@ class WordSerializer(serializers.ModelSerializer):
     class Meta:
         model = Word
         fields = ['id', 'english_word','translation','example','level','category','category_name']
+
+
