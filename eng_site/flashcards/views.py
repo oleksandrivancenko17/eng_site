@@ -36,6 +36,20 @@ class FlashcardViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
             next_review_date__lte=today
         ).select_related('word', "word__category").order_by('next_review_date')
 
+    @action(detail=False, methods=['get'], url_path='training-session')
+    def training_session(self, request):
+        queryset = self.get_queryset()
+
+        cards_left = queryset.count()
+        cards_to_review = queryset[:20]
+
+        serializer = self.get_serializer(cards_to_review, many=True)
+
+        return Response({
+            'cards_left': cards_left,
+            'cards_to_review': serializer.data
+                        })
+
     @action(detail=True, methods=['post'])
     def review(self,request, pk=None):
         card = get_object_or_404(UserWord, pk=pk, user=request.user)

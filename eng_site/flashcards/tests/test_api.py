@@ -36,3 +36,22 @@ def test_review_card_endpoint(api_client, test_user, test_flashcard):
 
     test_flashcard.refresh_from_db()
     assert test_flashcard.success_counter == 1
+
+
+@pytest.mark.django_db
+def test_training_session_endpoint(api_client, test_user, test_flashcard):
+
+    api_client.force_authenticate(user=test_user)
+
+    response = api_client.get('/flashcards/api/v1/cards/training-session/')
+
+    assert response.status_code == status.HTTP_200_OK
+
+    assert 'cards_left' in response.data
+    assert 'cards_to_review' in response.data
+
+    assert response.data['cards_left'] == 1
+    assert len(response.data['cards_to_review']) == 1
+
+    assert response.data['cards_to_review'][0]['id'] == test_flashcard.id
+    assert response.data['cards_to_review'][0]['english_word'] == "Apple"
