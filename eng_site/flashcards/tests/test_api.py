@@ -4,7 +4,7 @@ from rest_framework import status
 @pytest.mark.django_db
 def test_get_cards_unauthenticated_user(api_client):
     response = api_client.get('/flashcards/api/v1/cards/')
-    assert response.status_code == status.HTTP_403_FORBIDDEN
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
 
 @pytest.mark.django_db
 def test_get_cards_authenticated_user(api_client, test_user, test_flashcard):
