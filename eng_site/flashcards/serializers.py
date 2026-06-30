@@ -18,9 +18,9 @@ class ReviewCardSerializer(serializers.Serializer):
 
 
 class CustomWordCreateSerializer(serializers.Serializer):
-    english_word = serializers.CharField(required=True, max_length=60)
-    translation = serializers.CharField(required=True, max_length=60)
-    example = serializers.CharField(required=False, allow_blank=True, max_length=255)
+    english_word = serializers.CharField(required=True, max_length=300)
+    translation = serializers.CharField(required=True, max_length=300)
+    example = serializers.CharField(required=False, allow_blank=True, max_length=500)
     level = serializers.CharField(required=True, max_length=2)
     category_id = serializers.IntegerField(required=True)
 

@@ -1,23 +1,78 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const cardsDataElement = document.getElementById('cards-data');
-    if (!cardsDataElement) return;
+/**
+ * @fileoverview Flashcards Training Module (SRS)
+ * Manages the client-side state for the spaced repetition system, including
+ * fetching batches of cards, rendering UI states, and syncing reviews with the API.
+ */
 
-    const cards = JSON.parse(cardsDataElement.textContent);
-    let currentIndex = 0;
-
-    const cardsLeftEl = document.getElementById('cards-left');
-    let totalCardsLeft = parseInt(cardsLeftEl.innerText);
+document.addEventListener("DOMContentLoaded", function () {
+    const loadingArea = document.getElementById('loading-area');
     const trainingArea = document.getElementById('training-area');
-    const dictUrl = trainingArea.getAttribute('data-dict-url');
+    const successArea = document.getElementById('success-area');
 
+    // Ensure we are on the training page
+    if (!trainingArea) return;
+
+    // UI Elements
+    const cardsLeftEl = document.getElementById('cards-left');
     const btnShowAnswer = document.getElementById('show-answer-btn');
     const cardBack = document.getElementById('card-back');
     const srsControls = document.getElementById('srs-controls');
+    const btnSpeak = document.getElementById('btn-speak');
 
-    function loadCurrentCard() {
+    // State Management
+    let cards = [];
+    let currentIndex = 0;
+    let totalCardsLeft = 0;
+    let isFetchingNextBatch = false;
+
+    // Initialize application state
+    fetchTrainingSession();
+
+    /**
+     * Fetches the next batch of due flashcards from the API.
+     */
+    async function fetchTrainingSession() {
+        try {
+            const response = await fetchWithAuth('/flashcards/api/v1/cards/training-session/');
+            const data = await response.json();
+
+            if (response.ok) {
+                cards = data.cards_to_review || [];
+                totalCardsLeft = data.cards_left || 0;
+                currentIndex = 0;
+
+                loadingArea.classList.add('d-none');
+
+                if (cards.length > 0) {
+                    trainingArea.classList.remove('d-none');
+                    renderCurrentCard();
+                } else {
+                    showSuccessScreen();
+                }
+            } else {
+                showError("Не вдалося завантажити сесію. Спробуйте пізніше.");
+            }
+        } catch (error) {
+            console.error("API Error [fetchTrainingSession]:", error);
+            showError("Помилка мережі. Перевірте з'єднання.");
+        }
+    }
+
+    /**
+     * Renders the current flashcard data into the DOM.
+     * Triggers batch refetch if the current batch is exhausted.
+     */
+    function renderCurrentCard() {
         if (currentIndex >= cards.length) {
-            if (totalCardsLeft > 0) {
-                location.reload();
+            if (totalCardsLeft > 0 && !isFetchingNextBatch) {
+                isFetchingNextBatch = true;
+                trainingArea.classList.add('d-none');
+                loadingArea.classList.remove('d-none');
+
+                // Fetch next chunk and reset flag
+                fetchTrainingSession().finally(() => {
+                    isFetchingNextBatch = false;
+                });
             } else {
                 showSuccessScreen();
             }
@@ -25,12 +80,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         const card = cards[currentIndex];
-        document.getElementById('word-category').innerText = card.category;
+
+        // Populate DOM nodes
+        document.getElementById('word-category').innerText = card.category || 'Слово';
         document.getElementById('english-word').innerText = card.english_word;
         document.getElementById('ukrainian-translation').innerText = card.translation;
         document.getElementById('example-sentence').innerText = card.example ? `"${card.example}"` : "";
         cardsLeftEl.innerText = totalCardsLeft;
 
+        // Reset UI state for the new card
         cardBack.style.display = 'none';
         cardBack.classList.remove('fade-in');
         srsControls.style.display = 'none';
@@ -38,52 +96,66 @@ document.addEventListener("DOMContentLoaded", function() {
         btnShowAnswer.style.display = 'block';
     }
 
-    window.nextCard = function(quality) {
-        const currentCard = cards[currentIndex];
-        const url = `/flashcards/review/${currentCard.id}/`;
-
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'X-CSRFToken': getCookie('csrftoken'),
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({'quality': quality})
-        });
-
-        currentIndex++;
-        if (quality !== 'again') {
-            totalCardsLeft--;
-        }
-        loadCurrentCard();
-    };
-
-    window.showAnswer = function() {
+    // Event Listeners
+    btnShowAnswer.addEventListener('click', function () {
         btnShowAnswer.style.display = 'none';
         cardBack.style.display = 'block';
         cardBack.classList.add('fade-in');
         srsControls.style.display = 'block';
         srsControls.classList.add('fade-in');
-    };
+    });
 
-    window.speakWord = function() {
-        const word = cards[currentIndex].english_word;
-        const msg = new SpeechSynthesisUtterance(word);
-        msg.lang = 'en-US';
-        window.speechSynthesis.speak(msg);
-    };
+    btnSpeak.addEventListener('click', function () {
+        const word = cards[currentIndex]?.english_word;
+        if (word) {
+            const utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = 'en-US';
+            window.speechSynthesis.speak(utterance);
+        }
+    });
 
+    // SRS Review submission logic
+    document.querySelectorAll('.srs-btn').forEach(btn => {
+        btn.addEventListener('click', async function () {
+            const quality = this.getAttribute('data-quality');
+            const currentCard = cards[currentIndex];
+
+            // Optimistic UI update: disable buttons to prevent rapid multi-clicks
+            const allSrsBtns = document.querySelectorAll('.srs-btn');
+            allSrsBtns.forEach(b => b.disabled = true);
+
+            try {
+                // Fire-and-forget API request (doesn't block UI progression)
+                fetchWithAuth(`/flashcards/api/v1/cards/${currentCard.id}/review/`, {
+                    method: 'POST',
+                    body: JSON.stringify({ quality: quality })
+                });
+            } catch (error) {
+                console.error("Failed to sync review:", error);
+            }
+
+            // Restore button states for the next card
+            allSrsBtns.forEach(b => b.disabled = false);
+
+            // Progress state
+            currentIndex++;
+            if (quality !== 'again') {
+                totalCardsLeft--;
+            }
+            renderCurrentCard();
+        });
+    });
+
+    /**
+     * UI State transitions
+     */
     function showSuccessScreen() {
-        trainingArea.innerHTML = `
-        <div class="col-md-8 col-lg-6 text-center py-5">
-            <div class="display-1 text-success mb-4"><i class="bi bi-check-circle-fill"></i></div>
-            <h2 class="fw-bold">Чудова робота!</h2>
-            <p class="text-muted fs-5">Ти повторив усі слова на сьогодні.</p>
-            <a href="${dictUrl}" class="btn btn-primary btn-lg mt-3 px-5">До словника</a>
-        </div>`;
+        trainingArea.classList.add('d-none');
+        loadingArea.classList.add('d-none');
+        successArea.classList.remove('d-none');
     }
 
-    if (cards.length > 0) {
-        loadCurrentCard();
+    function showError(msg) {
+        loadingArea.innerHTML = `<p class="text-danger fs-5">${msg}</p>`;
     }
 });

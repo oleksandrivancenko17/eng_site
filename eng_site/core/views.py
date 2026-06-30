@@ -1,26 +1,40 @@
 from django.views.generic import TemplateView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 from django.utils import timezone
 from flashcards.models import UserWord
 
 
-class DashboardView(LoginRequiredMixin, TemplateView):
+class DashboardUI(TemplateView):
+    """
+    SPA Shell for the Dashboard.
+    Authentication is handled strictly on the client-side via JWT.
+    """
     template_name = 'dashboard.html'
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
 
+class DashboardStatsAPIView(APIView):
+    """
+    BFF (Backend For Frontend) endpoint aggregating statistics
+    from different apps for the user dashboard.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
         now = timezone.now()
 
-        context['cards_to_review_count'] = UserWord.objects.filter(
-            user=self.request.user,
+        cards_to_review = UserWord.objects.filter(
+            user=request.user,
             next_review_date__lte=now
         ).count()
 
-        context['total_words_count'] = UserWord.objects.filter(
-            user=self.request.user
+        total_words = UserWord.objects.filter(
+            user=request.user
         ).count()
 
-        context['streak_days'] = self.request.user.current_streak
-
-        return context
+        return Response({
+            'cards_to_review': cards_to_review,
+            'total_words': total_words,
+            'streak_days': request.user.current_streak
+        })

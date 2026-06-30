@@ -3,8 +3,6 @@
 
 {% block title %}Бібліотека текстів - EngLearn{% endblock %}
 
-{% block extra_css %}{% endblock %}
-
 {% block content %}
     <div class="container mb-5 py-4">
 
@@ -27,135 +25,65 @@
                 <div class="filter-sidebar position-sticky" style="top: 20px;">
                     <h5 class="fw-bold mb-3"><i class="bi bi-funnel me-2"></i>Фільтри</h5>
 
-                    <form action="" method="GET">
+                    <form id="filter-form">
                         <div class="mb-4">
-                            <input type="text" class="form-control" placeholder="Пошук текстів..." name="q"
-                                   value="{{ current_q }}">
-                        </div>
-
-                        {% if user.is_authenticated %}
-                            <div class="mb-4">
-                                <h6 class="fw-bold small text-muted text-uppercase mb-2">Статус</h6>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="status" value="all"
-                                           id="statusAll"
-                                           {% if current_status == 'all' %}checked{% endif %}>
-                                    <label class="form-check-label" for="statusAll">Всі тексти</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="status" value="unread"
-                                           id="statusUnread"
-                                           {% if current_status == 'unread' %}checked{% endif %}>
-                                    <label class="form-check-label" for="statusUnread">Непрочитані</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="status" value="read"
-                                           id="statusRead"
-                                           {% if current_status == 'read' %}checked{% endif %}>
-                                    <label class="form-check-label" for="statusRead">Прочитані</label>
-                                </div>
-                            </div>
-                        {% endif %}
-
-                        <div class="mb-4">
-                            <h6 class="fw-bold small text-muted text-uppercase mb-2">Рівень</h6>
-                            {% for level_code, level_name in level_choices %}
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="level"
-                                           value="{{ level_code }}" id="level_{{ level_code }}"
-                                           {% if level_code in current_levels %}checked{% endif %}>
-                                    <label class="form-check-label"
-                                           for="level_{{ level_code }}">{{ level_code }}</label>
-                                </div>
-                            {% endfor %}
+                            <input type="text" class="form-control" placeholder="Пошук текстів..." name="search"
+                                   id="search-input">
                         </div>
 
                         <div class="mb-4">
                             <h6 class="fw-bold small text-muted text-uppercase mb-2">Тематика</h6>
-                            {% for cat in categories %}
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="category" value="{{ cat.id }}"
-                                           id="cat_{{ cat.id }}"
-                                           {% if cat.id in current_categories %}checked{% endif %}>
-                                    <label class="form-check-label" for="cat_{{ cat.id }}">{{ cat.name }}</label>
-                                </div>
-                            {% endfor %}
+                            <select class="form-select text-muted" name="category" id="category-filter">
+                                <option value="">Всі теми</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <h6 class="fw-bold small text-muted text-uppercase mb-2">Рівень</h6>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" name="level"
+                                                           value="A1" id="lvl_A1"><label class="form-check-label"
+                                                                                         for="lvl_A1">A1</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" name="level"
+                                                           value="A2" id="lvl_A2"><label class="form-check-label"
+                                                                                         for="lvl_A2">A2</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" name="level"
+                                                           value="B1" id="lvl_B1"><label class="form-check-label"
+                                                                                         for="lvl_B1">B1</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" name="level"
+                                                           value="B2" id="lvl_B2"><label class="form-check-label"
+                                                                                         for="lvl_B2">B2</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" name="level"
+                                                           value="C1" id="lvl_C1"><label class="form-check-label"
+                                                                                         for="lvl_C1">C1</label></div>
                         </div>
 
                         <button type="submit" class="btn btn-primary w-100">Застосувати</button>
-                        <a href="{% url 'library:list' %}"
-                           class="btn btn-link w-100 text-muted mt-2 text-decoration-none">Скинути</a>
+                        <button type="button" id="reset-filters"
+                                class="btn btn-link w-100 text-muted mt-2 text-decoration-none">Скинути
+                        </button>
                     </form>
                 </div>
             </div>
 
             <div class="col-lg-9">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                    <p class="text-muted m-0">Знайдено: <strong>{{ paginator.count }}</strong> текстів</p>
+                    <p class="text-muted m-0">Знайдено: <strong id="articles-count">0</strong> текстів</p>
                 </div>
 
-                <div class="row g-4">
-                    {% for article in articles %}
-                        <div class="col-md-6">
-                            <div class="card text-card h-100">
-                                <img src="https://placehold.co/600x400/e9ecef/495057?text={{ article.category.name|urlencode|default:'Article' }}"
-                                     class="card-img-top" alt="Cover">
-                                <div class="card-body d-flex flex-column">
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge
-                                    {% if 'A' in article.level %}bg-success
-                                    {% elif 'B' in article.level %}bg-primary
-                                    {% else %}bg-danger{% endif %}
-                                    badge-level">{{ article.level }}</span>
-                                    </div>
-                                    <h5 class="card-title fw-bold">{{ article.title }}</h5>
-                                    <p class="card-text text-muted small mb-3">{{ article.description|truncatechars:100 }}</p>
-                                    <div class="mt-auto d-flex justify-content-between align-items-center">
-                                        <span class="badge bg-light text-dark border"><i
-                                                class="bi bi-tag me-1"></i> {{ article.category.name|default:"Різне" }}</span>
-                                    </div>
-                                </div>
-                                <div class="card-footer bg-white border-top-0 pb-3 pt-0">
-                                    <a href="{% url 'library:detail' article.pk %}" class="btn btn-outline-primary w-100">Читати статтю</a>
-                                </div>
-                            </div>
-                        </div>
-                    {% empty %}
-                        <div class="col-12 text-center py-5">
-                            <h4 class="text-muted">За вашим запитом нічого не знайдено 😔</h4>
-                        </div>
-                    {% endfor %}
+                <div id="articles-container" class="row g-4">
+                    <div class="col-12 text-center py-5">
+                        <div class="spinner-border text-primary" role="status"></div>
+                    </div>
                 </div>
 
-                {% if is_paginated %}
-                    <nav class="mt-5">
-                        <ul class="pagination justify-content-center">
-                            {% if page_obj.has_previous %}
-                                <li class="page-item"><a class="page-link" href="?page=
-                                        {{ page_obj.previous_page_number }}{% for lvl in current_levels %}&level={{ lvl }}{% endfor %}{% for cat in current_categories %}&category={{ cat }}{% endfor %}&q={{ current_q }}">Назад</a>
-                                </li>
-                            {% else %}
-                                <li class="page-item disabled"><a class="page-link" href="#">Назад</a></li>
-                            {% endif %}
-
-                            <li class="page-item active"><a class="page-link" href="#">{{ page_obj.number }}
-                                з {{ paginator.num_pages }}</a></li>
-
-                            {% if page_obj.has_next %}
-                                <li class="page-item"><a class="page-link" href="?page=
-                                        {{ page_obj.next_page_number }}{% for lvl in current_levels %}&level={{ lvl }}{% endfor %}{% for cat in current_categories %}&category={{ cat }}{% endfor %}&q={{ current_q }}">Вперед</a>
-                                </li>
-                            {% else %}
-                                <li class="page-item disabled"><a class="page-link" href="#">Вперед</a></li>
-                            {% endif %}
-                        </ul>
-                    </nav>
-                {% endif %}
-
+                <nav class="mt-5">
+                    <ul id="pagination-container" class="pagination justify-content-center"></ul>
+                </nav>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'js/library.js' %}"></script>
 {% endblock %}

@@ -3,21 +3,19 @@
 
 {% block title %}Тест з граматики - EngLearn{% endblock %}
 
-{% block extra_css %}{% endblock %}
-
 {% block content %}
 <div class="container my-4 quiz-container">
 
     <div class="mb-4">
-        <a href="{% url 'grammar:topic_list' %}" class="text-decoration-none text-muted">
+        <a href="/grammar/topics/" class="text-decoration-none text-muted">
             <i class="bi bi-arrow-left me-1"></i> Назад до всіх тем
         </a>
     </div>
 
     <div class="d-flex justify-content-between align-items-end mb-2">
         <div>
-            <span class="badge bg-primary mb-2">{{ topic.level }}</span>
-            <h3 class="fw-bold m-0">{{ topic.title }}</h3>
+            <span id="topic-level" class="badge bg-primary mb-2 placeholder-glow"><span class="placeholder col-2"></span></span>
+            <h3 id="topic-title" class="fw-bold m-0">Завантаження...</h3>
         </div>
         <div class="text-end">
             <span class="text-muted fw-bold" id="progress-text">Завантаження...</span>
@@ -28,14 +26,14 @@
         <div class="progress-bar bg-primary" id="progress-bar" role="progressbar" style="width: 0%;"></div>
     </div>
 
-    <div class="card shadow-sm border-0 rounded-4" id="quiz-card" data-save-url="{% url 'grammar:save_progress' topic.id %}">
+    <div class="card shadow-sm border-0 rounded-4" id="quiz-card" style="display: none;">
         <div class="card-body p-4 p-md-5">
 
             <h4 class="mb-4" style="line-height: 1.6;" id="question-text"></h4>
 
             <div id="options-container"></div>
 
-            <div class="explanation-box p-4 mt-4 rounded" id="explanation-box">
+            <div class="explanation-box p-4 mt-4 rounded" id="explanation-box" style="display: none;">
                 <h6 class="fw-bold mb-2"><i class="bi bi-info-circle me-2"></i>Пояснення:</h6>
                 <p class="mb-0 text-dark" id="explanation-text"></p>
             </div>
@@ -54,16 +52,13 @@
             <i class="bi bi-trophy text-warning" style="font-size: 4rem;"></i>
             <h2 class="fw-bold mt-3 mb-2">Тест завершено!</h2>
             <h4 class="text-muted mb-4">Твій результат: <span class="text-primary fw-bold" id="final-score">0</span> з <span id="total-score">0</span></h4>
-            <a href="{% url 'grammar:topic_list' %}" class="btn btn-primary btn-lg px-5 fw-bold">
+            <a href="/grammar/topics/" class="btn btn-primary btn-lg px-5 fw-bold">
                 Повернутися до тем
             </a>
         </div>
     </div>
 
 </div>
-
-{{ quiz_data_json|safe|json_script:"quiz-data" }}
-
 {% endblock %}
 
 {% block extra_js %}

@@ -1,17 +1,14 @@
 services:
   web:
     build: .
-    command: >
-      sh -c "python manage.py migrate &&
-             python manage.py collectstatic --noinput &&
-             gunicorn eng_site.wsgi:application --bind 0.0.0.0:8000"
     ports:
-      - "80:8000"
+      - "8000:8000"
     env_file:
       - .env
     depends_on:
       - db
       - redis
+    restart: unless-stopped
 
   db:
     image: postgres:15-alpine
@@ -21,11 +18,11 @@ services:
       - POSTGRES_DB=${DB_NAME}
       - POSTGRES_USER=${DB_USER}
       - POSTGRES_PASSWORD=${DB_PASSWORD}
+    restart: unless-stopped
 
   redis:
     image: redis:7-alpine
-    ports:
-      - "6379:6379"
+    restart: unless-stopped
 
 volumes:
   postgres_data:

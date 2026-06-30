@@ -10,9 +10,12 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class ArticleListSerializer(serializers.ModelSerializer):
     is_read = serializers.SerializerMethodField()
+    category_name = serializers.CharField(source='category.name', read_only=True)
+
     class Meta:
         model = Article
-        fields = ['id', 'title', 'description', 'level', 'category', 'is_read']
+
+        fields = ['id', 'title', 'description', 'level', 'category', 'is_read', 'category_name']
 
 
     def get_is_read(self, obj):

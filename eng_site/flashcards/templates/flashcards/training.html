@@ -3,47 +3,43 @@
 
 {% block title %}Тренування - EngLearn{% endblock %}
 
-{% block extra_css %}{% endblock %}
-
 {% block content %}
-    <div class="container my-5">
+    <div class="container my-5" id="app-container">
 
-        {% if cards_list %}
+        <div id="loading-area" class="text-center py-5">
+            <div class="spinner-border text-primary" role="status"></div>
+            <p class="mt-3 text-muted">Завантажуємо картки...</p>
+        </div>
+
+        <div id="training-area" class="d-none">
             <div class="text-center mb-4">
                 <h3 class="fw-bold mb-2">Тренування пам'яті</h3>
                 <p class="text-muted fs-5">
-                    Залишилось на сьогодні: <span class="badge bg-primary rounded-pill px-3 py-2 ms-1 fs-6"
-                                                  id="cards-left">{{ cards_left }}</span>
+                    Залишилось на сьогодні: <span class="badge bg-primary rounded-pill px-3 py-2 ms-1 fs-6" id="cards-left">-</span>
                 </p>
             </div>
 
-            <div class="row justify-content-center" id="training-area" data-dict-url="{% url 'dictionary:dictionary' %}">
+            <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
                     <div class="flashcard shadow-sm p-4 p-md-5 text-center position-relative">
                         <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3"
-                                title="Прослухати" onclick="speakWord()">
+                                title="Прослухати" id="btn-speak">
                             <i class="bi bi-volume-up-fill fs-5 text-secondary"></i>
                         </button>
 
                         <div id="card-front">
-                        <span class="text-uppercase tracking-wide text-muted small fw-bold mb-3 d-block"
-                              id="word-category">
-                            </span>
-                            <h1 class="word-en mb-0" id="english-word">
-                            </h1>
+                            <span class="text-uppercase tracking-wide text-muted small fw-bold mb-3 d-block" id="word-category"></span>
+                            <h1 class="word-en mb-0" id="english-word"></h1>
                         </div>
 
                         <div id="card-back" style="display: none;" class="mt-4 pt-4 border-top">
-                            <h2 class="word-uk mb-3" id="ukrainian-translation">
-                            </h2>
-                            <p class="example-sentence mb-0" id="example-sentence">
-                            </p>
+                            <h2 class="word-uk mb-3" id="ukrainian-translation"></h2>
+                            <p class="example-sentence mb-0" id="example-sentence"></p>
                         </div>
                     </div>
 
                     <div class="mt-4">
-                        <button class="btn btn-primary btn-lg w-100 py-3 fw-bold shadow-sm" id="show-answer-btn"
-                                onclick="showAnswer()">
+                        <button class="btn btn-primary btn-lg w-100 py-3 fw-bold shadow-sm" id="show-answer-btn">
                             Показати переклад
                         </button>
 
@@ -51,23 +47,22 @@
                             <p class="text-center text-muted small fw-bold text-uppercase mb-3">Як добре ти згадав?</p>
                             <div class="row g-2">
                                 <div class="col-6 col-sm-3">
-                                    <button class="btn btn-outline-danger w-100 srs-btn" onclick="nextCard('again')">
+                                    <button class="btn btn-outline-danger w-100 srs-btn" data-quality="again">
                                         <span class="d-block mb-1">Знову</span>
                                     </button>
                                 </div>
                                 <div class="col-6 col-sm-3">
-                                    <button class="btn btn-outline-warning w-100 srs-btn text-dark"
-                                            onclick="nextCard('hard')">
+                                    <button class="btn btn-outline-warning w-100 srs-btn text-dark" data-quality="hard">
                                         <span class="d-block mb-1">Важко</span>
                                     </button>
                                 </div>
                                 <div class="col-6 col-sm-3">
-                                    <button class="btn btn-outline-success w-100 srs-btn" onclick="nextCard('good')">
+                                    <button class="btn btn-outline-success w-100 srs-btn" data-quality="good">
                                         <span class="d-block mb-1">Добре</span>
                                     </button>
                                 </div>
                                 <div class="col-6 col-sm-3">
-                                    <button class="btn btn-outline-primary w-100 srs-btn" onclick="nextCard('easy')">
+                                    <button class="btn btn-outline-primary w-100 srs-btn" data-quality="easy">
                                         <span class="d-block mb-1">Легко</span>
                                     </button>
                                 </div>
@@ -76,18 +71,18 @@
                     </div>
                 </div>
             </div>
-        {% else %}
+        </div>
+
+        <div id="success-area" class="d-none">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6 text-center py-5">
                     <div class="display-1 text-success mb-4"><i class="bi bi-check-circle-fill"></i></div>
                     <h2 class="fw-bold">Чудова робота!</h2>
                     <p class="text-muted fs-5">Ти повторив усі доступні слова. Повертайся пізніше!</p>
-                    <a href="{% url 'dictionary:dictionary' %}" class="btn btn-primary btn-lg mt-3 px-5">Додати нові слова</a>
+                    <a href="/dictionary/" class="btn btn-primary btn-lg mt-3 px-5">Додати нові слова</a>
                 </div>
             </div>
-        {% endif %}
-
-        {{ cards_list|json_script:"cards-data" }}
+        </div>
 
     </div>
 {% endblock %}

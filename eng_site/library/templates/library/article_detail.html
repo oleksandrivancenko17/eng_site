@@ -3,42 +3,37 @@
 
 {% block title %}Читати статтю - EngLearn{% endblock %}
 
-{% block extra_css %}{% endblock %}
-
 {% block content %}
+    {% csrf_token %}
     <div class="container my-5">
         <div class="row">
-
             <div class="col-lg-8">
                 <div class="mb-4">
-                    <a href="{% url 'library:list' %}" class="text-decoration-none text-muted mb-3 d-inline-block">
+                    <a href="/library/" class="text-decoration-none text-muted mb-3 d-inline-block">
                         <i class="bi bi-arrow-left me-1"></i> Назад до бібліотеки
                     </a>
+
                     <div class="d-flex align-items-center gap-2 mb-2">
-                        <span class="badge bg-primary">{{ level }}</span>
+                        <span id="article-level" class="badge bg-primary placeholder-glow"><span
+                                class="placeholder col-12"></span></span>
                     </div>
-                    <h1 class="fw-bold mb-3">{{ title }}</h1>
-                    <p class="lead text-muted">{{ description }}</p>
+                    <h1 id="article-title" class="fw-bold mb-3">Завантаження...</h1>
+                    <p id="article-description" class="lead text-muted placeholder-glow"><span
+                            class="placeholder col-8"></span></p>
                     <hr>
                 </div>
 
                 <div id="article-text" class="article-container">
-                    {{ content|linebreaks }}
+                    <div class="text-center my-5">
+                        <div class="spinner-border text-primary" role="status"></div>
+                    </div>
                 </div>
 
                 <div class="mt-5 p-4 bg-white border rounded text-center shadow-sm">
-                    <h4 class="fw-bold">Прочитав статтю?</h4>
-
-                    {% if is_read %}
-                        <button class="btn btn-outline-success mt-2" disabled>
-                            <i class="bi bi-check2-all me-2"></i>Прочитано!
-                        </button>
-                    {% else %}
-                        <button id="mark-read-btn" data-article-id="{{ id }}" class="btn btn-success mt-2">
-                            <i class="bi bi-check-circle me-2"></i>Позначити як прочитано
-                        </button>
-                    {% endif %}
-
+                    <h4 class="fw-bold mb-3">Прочитав статтю?</h4>
+                    <button id="mark-read-btn" class="btn btn-success btn-lg px-5 fw-bold shadow-sm">
+                        <i class="bi bi-check-circle me-2"></i>Відмітити як прочитану
+                    </button>
                 </div>
             </div>
 
@@ -47,34 +42,25 @@
                     <div class="card-header bg-primary text-white fw-bold">
                         <i class="bi bi-translate me-2"></i>Перекладач
                     </div>
-
-                    <div class="card-body" id="translation-panel" data-translate-url="{% url 'library:translate' %}">
-
+                    <div class="card-body" id="translation-panel">
                         <div id="empty-state" class="text-center py-4 text-muted">
                             <i class="bi bi-cursor-text fs-1 mb-2"></i>
                             <p class="mb-0">Виділи будь-яке незнайоме слово в тексті, щоб побачити переклад та додати
-                                його у словник.</p>
+                                його у картки.</p>
                         </div>
 
                         <div id="word-action-state" style="display: none;">
                             <h3 class="fw-bold text-dark mb-1" id="selected-word">word</h3>
-
                             <div class="p-3 bg-light rounded mb-4 mt-3 border">
                                 <h5 class="text-primary mb-0" id="translated-word">переклад...</h5>
                             </div>
-
-                            <button class="btn btn-primary w-100 fw-bold" id="add-to-srs-btn"
-                                    data-url="{% url 'flashcards:add_card_ajax' %}"
-                                    data-level="{{ level }}"
-                                    data-category="{{ category_id|default:'' }}">
+                            <button class="btn btn-primary w-100 fw-bold" id="add-to-srs-btn">
                                 <i class="bi bi-plus-circle me-2"></i>Додати у картки
                             </button>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 {% endblock %}

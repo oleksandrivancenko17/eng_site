@@ -1,17 +1,14 @@
-import json
+import hashlib
 from django.conf import settings
 from django.core.cache import cache
 
-from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from django.http import JsonResponse
-from django.shortcuts import get_object_or_404
-from django.views.generic import ListView, TemplateView
-from django.views.decorators.http import require_POST
 from deep_translator import GoogleTranslator
 from rest_framework.views import APIView
 
 from library.models import Article, BookCategory
+from dictionary.models import Word
+from flashcards.models import UserWord
 
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
@@ -73,140 +70,31 @@ class ArticleViewSet(viewsets.ReadOnlyModelViewSet):
 class TranslateWordView(APIView):
     def post(self, request):
         try:
-            word = request.data.get('word', '').strip().lower()
+            text_to_translate = request.data.get('word', '').strip()
 
-            if not word:
-                return Response({'error': 'Немає слова для перекладу'}, status=status.HTTP_400_BAD_REQUEST)
+            if not text_to_translate:
+                return Response({'error': 'Немає тексту для перекладу'}, status=status.HTTP_400_BAD_REQUEST)
 
-            cache_key = f'translation_en_uk_{word}'
+            text_hash = hashlib.md5(text_to_translate.encode('utf-8')).hexdigest()
+            cache_key = f'trans_en_uk_{text_hash}'
+
             translation = cache.get(cache_key)
 
             if not translation:
-                translation = GoogleTranslator(source='en', target='uk').translate(word)
+                translation = GoogleTranslator(source='en', target='uk').translate(text_to_translate)
                 cache.set(cache_key, translation, settings.CACHE_TTL * 30)
 
+            is_in_flashcards = False
+            if request.user.is_authenticated:
+                word_obj = Word.objects.filter(english_word__iexact=text_to_translate).first()
+                if word_obj:
+                    is_in_flashcards = UserWord.objects.filter(user=request.user, word=word_obj).exists()
+
             return Response({
-                'original_word': word,
-                'translation': translation
+                'original_word': text_to_translate,
+                'translation': translation,
+                'is_in_flashcards': is_in_flashcards
             })
 
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-class ArticleListView(ListView):
-    model = Article
-    template_name = 'library/reading_list.html'
-    context_object_name = 'articles'
-    paginate_by = 6
-
-    def get_queryset(self):
-        queryset = Article.objects.select_related('category').all()
-
-        search_query = self.request.GET.get('q', '')
-
-        levels = self.request.GET.getlist('level')
-        categories = self.request.GET.getlist('category')
-
-        read_status = self.request.GET.get('status', 'all')
-
-        if search_query:
-            queryset = queryset.filter(
-                Q(title__icontains=search_query) |
-                Q(description__icontains=search_query)
-            )
-
-        if levels:
-            queryset = queryset.filter(level__in=levels)
-
-        if categories:
-            queryset = queryset.filter(category_id__in=categories)
-
-        if self.request.user.is_authenticated:
-            if read_status == 'read':
-                queryset = queryset.filter(read_by=self.request.user)
-            elif read_status == 'unread':
-                queryset = queryset.exclude(read_by=self.request.user)
-
-        return queryset
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-
-        categories = cache.get('library_categories')
-        if not categories:
-            categories = BookCategory.objects.all()
-            cache.set('library_categories', categories, settings.CACHE_TTL * 30)
-
-        context['level_choices'] = Article.LEVEL_CHOICES
-        context['categories'] = categories
-
-        context['current_q'] = self.request.GET.get('q', '')
-        context['current_levels'] = self.request.GET.getlist('level', '')
-
-        context['current_categories'] = [int(c) for c in self.request.GET.getlist('category') if c.isdigit()]
-        context['current_status'] = self.request.GET.get('status', 'all')
-
-        return context
-
-
-class ArticleDetailView(TemplateView):
-    template_name = 'library/article_detail.html'
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        article = Article.objects.get(pk=self.kwargs['pk'])
-
-        is_read = False
-        if self.request.user.is_authenticated:
-            if article.read_by.filter(id=self.request.user.id).exists():
-                is_read = True
-
-        context = {
-            'id': article.id,
-            'title': article.title,
-            'description': article.description,
-            'content': article.content,
-            'level': article.level,
-            'category_id': article.category.id if article.category else '',
-            'is_read': is_read,
-        }
-
-        return context
-
-
-@require_POST
-def translate_word(request):
-    try:
-        data = json.loads(request.body)
-        word = data.get('word', '').strip().lower()
-
-        if not word:
-            return JsonResponse({'error': 'Немає слова для перекладу'}, status=400)
-
-        cache_key = f'translation_en_uk_{word}'
-        translation = cache.get(cache_key)
-
-        if not translation:
-            translation = GoogleTranslator(source='en', target='uk').translate(word)
-            cache.set(cache_key, translation, settings.CACHE_TTL * 30)
-
-
-        return JsonResponse({
-            'original_word': word,
-            'translation': translation
-        })
-
-    except Exception as e:
-        return JsonResponse({'error': str(e)}, status=500)
-
-
-@login_required
-@require_POST
-def mark_article_read(request, article_id):
-    try:
-        article = get_object_or_404(Article, id=article_id)
-        article.read_by.add(request.user)
-
-        return JsonResponse({'status': 'success'})
-    except Exception as e:
-        return JsonResponse({'status': 'error', 'message': str(e)}, status=500)

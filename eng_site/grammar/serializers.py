@@ -14,7 +14,7 @@ class TopicListSerializer(serializers.ModelSerializer):
         user = self.context['request'].user
         if user.is_authenticated:
             progress = UserTopicProgress.objects.filter(user=user, topic=obj).first()
-            return progress.score if progress else 0
+            return progress.score if progress else None
         return None
 
 
