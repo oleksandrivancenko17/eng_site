@@ -51,24 +51,28 @@ To run this project locally on your machine, ensure you have **Docker** and **Gi
 git clone [https://github.com/oleksandrivancenko17/eng_site.git](https://github.com/oleksandrivancenko17/eng_site.git)
 cd eng_site
 
+
 2. Setup environment variables:
+
 Rename the provided example file to .env and fill in your local credentials.
 
-Bash
 cp .env.example .env
+
+
 3. Build and launch the containers:
 
-Bash
 docker compose up -d --build
+
 4. Run database migrations & collect static files:
 
-Bash
 docker compose exec web python manage.py migrate
 docker compose exec web python manage.py collectstatic --noinput
+
+
 5. Create a superuser (Admin access):
 
-Bash
 docker compose exec web python manage.py createsuperuser
+
 6. Access the application:
 
 Main website: http://localhost:8000
@@ -77,6 +81,10 @@ Admin panel: http://localhost:8000/admin
 
 🔄 CI/CD Pipeline
 This project implements a continuous deployment workflow. Every push to the main branch triggers a GitHub Actions job that securely connects to the Azure production server via SSH, pulls the latest code, rebuilds the Docker containers, applies database migrations, and collects static files automatically.
+
+
+
+
 
 👨‍💻 Author
 Oleksandr Ivanchenko
