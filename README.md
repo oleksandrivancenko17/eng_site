@@ -27,7 +27,8 @@ A production-ready web application designed to make learning English interactive
 
 ### Backend & Core
 * **Python 3.13** & **Django 5.x**
-* **Django REST Framework (DRF)** * **PostgreSQL** (Primary Relational Database)
+* **Django REST Framework (DRF)**
+* **PostgreSQL** (Primary Relational Database)
 
 ### Infrastructure & DevOps
 * **Docker & Docker Compose** (Containerization & Orchestration)
@@ -77,14 +78,13 @@ Admin panel: http://localhost:8000/admin
 This project implements a continuous deployment workflow. Every push to the main branch triggers a GitHub Actions job that securely connects to the Azure production server via SSH, pulls the latest code, rebuilds the Docker containers, applies database migrations, and collects static files automatically.
 
 👨‍💻 Author
-Oleksandr Ivanchenko Backend Developer | Information Technology Student at Cherkasy State Technological University
+Oleksandr Ivanchenko
+Backend Developer | Information Technology Student at Cherkasy State Technological University
 
 📍 Cherkasy, Ukraine
 
 💼 Portfolio / Other Projects: medwedivka.me
 
 🐙 GitHub: @oleksandrivancenko17
-
-📧 Contact: (You can add your email or LinkedIn link here)
 
 If you find this project interesting or helpful, feel free to give it a ⭐!
