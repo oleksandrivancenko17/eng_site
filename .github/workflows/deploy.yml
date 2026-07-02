@@ -1,0 +1,23 @@
+name: Deploy to Azure Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Підключення до сервера та оновлення
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ~/eng_site/eng_site
+            git pull origin main
+            sudo docker compose up -d --build
+            sudo docker compose exec -T web python manage.py migrate
+            sudo docker compose exec -T web python manage.py collectstatic --noinput
