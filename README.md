@@ -47,9 +47,10 @@ A production-ready web application designed to make learning English interactive
 To run this project locally on your machine, ensure you have **Docker** and **Git** installed.
 
 **1. Clone the repository:**
-```bash
+
 git clone [https://github.com/oleksandrivancenko17/eng_site.git](https://github.com/oleksandrivancenko17/eng_site.git)
 cd eng_site
+
 2. Setup environment variables:
 Rename the provided example file to .env and fill in your local credentials.
 
