@@ -7,7 +7,7 @@ from dictionary.models import Category, Word
 
 
 class Command(BaseCommand):
-    help = 'Завантажує слова з JSON файлу в базу даних'
+    help = 'Завантажує слова з JSON файлу в базу даних без дублювання'
 
     def handle(self, *args, **kwargs):
         self.stdout.write("Починаємо завантаження...")
@@ -25,7 +25,16 @@ class Command(BaseCommand):
         words_to_create = []
         category_cache = {c.name: c for c in Category.objects.all()}
 
+        # 1. Завантажуємо всі існуючі англійські слова з бази у множину (set)
+        # Це працює блискавично швидко (О(1) для пошуку)
+        existing_words = set(Word.objects.values_list('english_word', flat=True))
+
         for item in data:
+            eng_word = item['english_word']
+
+            # 2. Якщо слово вже є в базі — просто пропускаємо цю ітерацію циклу
+            if eng_word in existing_words:
+                continue
 
             cat_name = item['category']
             if cat_name not in category_cache:
@@ -36,18 +45,22 @@ class Command(BaseCommand):
             category_obj = category_cache[cat_name]
 
             words_to_create.append(Word(
-                english_word=item['english_word'],
-                translation=item.get('translation',''),
-                example=item.get('example',''),
-                level=item.get('level','A1'),
+                english_word=eng_word,
+                translation=item.get('translation', ''),
+                example=item.get('example', ''),
+                level=item.get('level', 'A1'),
                 category_id=category_obj.id
-            )
-            )
+            ))
 
-        created_words = Word.objects.bulk_create(words_to_create, batch_size=500, ignore_conflicts=True)
-
-        self.stdout.write(self.style.SUCCESS(
-            f"Готово! Додано нових категорій: {categories_added}. Додано нових слів: {len(words_to_create)}."
-        ))
+        # 3. Зберігаємо лише якщо є нові слова
+        if words_to_create:
+            Word.objects.bulk_create(words_to_create, batch_size=500, ignore_conflicts=True)
+            self.stdout.write(self.style.SUCCESS(
+                f"Готово! Додано нових категорій: {categories_added}. Додано нових слів: {len(words_to_create)}."
+            ))
+        else:
+            self.stdout.write(self.style.WARNING(
+                "Нових слів не знайдено. Всі слова з файлу вже є в базі."
+            ))
 
         self.stdout.write(self.style.SUCCESS("Завантаження успішно завершено!"))
